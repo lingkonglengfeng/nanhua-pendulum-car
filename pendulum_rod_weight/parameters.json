@@ -1,0 +1,23 @@
+{
+  "rod_diameter": 8.0,
+  "clamp_bore_diameter": 8.2,
+  "clamp_width_x": 26.0,
+  "clamp_depth_y": 14.0,
+  "clamp_height": 8.0,
+  "split_gap": 0.6,
+  "outer_corner_radius": 1.0,
+  "bolt_center_x": 8.5,
+  "bolt_clearance_diameter": 2.8,
+  "nut_pocket_across_flats": 5.2,
+  "nut_pocket_depth": 2.4,
+  "washer_inner_diameter": 8.4,
+  "washer_outer_diameter": 16.0,
+  "washer_thickness": 1.6,
+  "default_washer_count": 2,
+  "geometric_max_washer_count": 10,
+  "lower_collar_bottom_from_pivot": 160.0,
+  "position_min": 70.0,
+  "position_max": 230.0,
+  "pivot_height": 320.0,
+  "notes": "Accessory for V3 8mm aluminum tube. Position means bottom of lower collar above pivot, not accessory COM. 10 washers is a geometry envelope, not a validated dynamic payload. Weigh whole assembly before control tuning."
+}

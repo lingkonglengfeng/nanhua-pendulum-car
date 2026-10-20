@@ -1,0 +1,27 @@
+{
+  "adapter": {
+    "valid_solid": true,
+    "watertight_stl": true,
+    "step_readback": true,
+    "volume_cm3": 26.064
+  },
+  "spacer": {
+    "valid_solid": true,
+    "watertight_stl": true,
+    "step_readback": true,
+    "volume_cm3": 0.412
+  },
+  "chassis_existing_holes_match": true,
+  "all_modeled_body_interferences": [],
+  "assembly_step_solids": 36,
+  "adapter_to_battery_reference_gap_mm": 10.0,
+  "pcb_top_z_mm": -24,
+  "pcb_bottom_z_reference_mm": -25.6,
+  "pcb_rear_gap_mm": 6,
+  "physical_fit_tested": false,
+  "unknowns": [
+    "actual PCB component and connector envelopes",
+    "actual PCB thickness (modeled 1.6 mm)",
+    "wheelset body intrusion and ground clearance"
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "assembly_step_valid_after_reimport": true,
+  "assembly_solid_count": 30,
+  "geometry_3mf_readback_pass": [
+    "01_base_shoe.3mf",
+    "02_lower_arm.3mf",
+    "03_upper_arm.3mf",
+    "04_splice_plate.3mf",
+    "05_bearing_cover.3mf",
+    "06_rod_hub.3mf",
+    "07_encoder_rail.3mf",
+    "08_encoder_carrier.3mf",
+    "09_magnet_cup.3mf",
+    "10_fit_coupon.3mf"
+  ],
+  "browser_manual_checks": [
+    "WebGL assembly displayed",
+    "angle slider changed to 180 degrees",
+    "encoder detail view displayed"
+  ],
+  "not_performed": [
+    "physical print",
+    "Bambu Studio slicing",
+    "load or stiffness test",
+    "control-system test"
+  ]
+}

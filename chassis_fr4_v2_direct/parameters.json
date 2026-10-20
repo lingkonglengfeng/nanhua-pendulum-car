@@ -1,0 +1,12 @@
+{
+  "revision":"FR4-V2-370-wheelset-direct",
+  "size_mm":[320,220,4],
+  "corner_radius_mm":10,
+  "wheelset_mount_centers_x_mm":[-118,118],
+  "wheelset_mount_centers_y_mm":[-94,94],
+  "mount_pitch_x_y_mm":[16,14],
+  "mount_hole_diameter_mm":3.4,
+  "motor":"370, 280 rpm, encoder fitted; voltage and exact model unconfirmed",
+  "axle_height_mm":null,
+  "notes":"Direct mounting below FR4. X is fore/aft; Y follows motor axis. Old 520 and adapter mounting holes removed. Motor shaft height is not inferred from top-view drawing."
+}

@@ -1,0 +1,11 @@
+{
+  "minimum_hole_to_hole_ligament_mm": 5.3,
+  "closest_pair": [
+    "H012",
+    "H041"
+  ],
+  "main_hole_slot_count": 100,
+  "step_valid": true,
+  "dxf_units_mm": true,
+  "dxf_audit_passed": true
+}

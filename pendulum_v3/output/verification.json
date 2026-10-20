@@ -1,0 +1,191 @@
+{
+  "revision": "A1mini-V3-AS5600-D32",
+  "units": "mm",
+  "parts": [
+    {
+      "id": "01_base_shoe",
+      "name": "底座插槽座",
+      "quantity": 2,
+      "size_print_xyz_mm": [
+        160.0,
+        60.0,
+        32.0
+      ],
+      "solid_volume_cm3": 131.05,
+      "brep_valid": true,
+      "watertight": true,
+      "positive_volume": true,
+      "orientation": "upright"
+    },
+    {
+      "id": "02_lower_arm",
+      "name": "下段支撑臂",
+      "quantity": 2,
+      "size_print_xyz_mm": [
+        116.0,
+        167.0,
+        12.0
+      ],
+      "solid_volume_cm3": 125.14,
+      "brep_valid": true,
+      "watertight": true,
+      "positive_volume": true,
+      "orientation": "flat_y"
+    },
+    {
+      "id": "03_upper_arm",
+      "name": "上段轴承臂",
+      "quantity": 2,
+      "size_print_xyz_mm": [
+        64.0,
+        169.0,
+        12.0
+      ],
+      "solid_volume_cm3": 104.08,
+      "brep_valid": true,
+      "watertight": true,
+      "positive_volume": true,
+      "orientation": "flat_y"
+    },
+    {
+      "id": "04_splice_plate",
+      "name": "接缝夹板",
+      "quantity": 4,
+      "size_print_xyz_mm": [
+        58.0,
+        70.0,
+        6.0
+      ],
+      "solid_volume_cm3": 23.9,
+      "brep_valid": true,
+      "watertight": true,
+      "positive_volume": true,
+      "orientation": "flat_y"
+    },
+    {
+      "id": "05_bearing_cover",
+      "name": "轴承端盖",
+      "quantity": 2,
+      "size_print_xyz_mm": [
+        60.0,
+        44.0,
+        3.0
+      ],
+      "solid_volume_cm3": 7.07,
+      "brep_valid": true,
+      "watertight": true,
+      "positive_volume": true,
+      "orientation": "flat_y"
+    },
+    {
+      "id": "06_rod_hub",
+      "name": "摆杆与轴夹持座",
+      "quantity": 1,
+      "size_print_xyz_mm": [
+        48.0,
+        66.0,
+        32.0
+      ],
+      "solid_volume_cm3": 66.85,
+      "brep_valid": true,
+      "watertight": true,
+      "positive_volume": true,
+      "orientation": "flat_y"
+    },
+    {
+      "id": "07_encoder_rail",
+      "name": "编码器滑轨支架",
+      "quantity": 1,
+      "size_print_xyz_mm": [
+        60.0,
+        59.0,
+        24.0
+      ],
+      "solid_volume_cm3": 15.78,
+      "brep_valid": true,
+      "watertight": true,
+      "positive_volume": true,
+      "orientation": "upright"
+    },
+    {
+      "id": "08_encoder_carrier",
+      "name": "编码器模块背板",
+      "quantity": 1,
+      "size_print_xyz_mm": [
+        64.0,
+        52.0,
+        26.0
+      ],
+      "solid_volume_cm3": 14.61,
+      "brep_valid": true,
+      "watertight": true,
+      "positive_volume": true,
+      "orientation": "flat_y"
+    },
+    {
+      "id": "09_magnet_cup",
+      "name": "轴端磁铁座",
+      "quantity": 1,
+      "size_print_xyz_mm": [
+        24.0,
+        18.0,
+        18.0
+      ],
+      "solid_volume_cm3": 4.44,
+      "brep_valid": true,
+      "watertight": true,
+      "positive_volume": true,
+      "orientation": "flat_y"
+    },
+    {
+      "id": "10_fit_coupon",
+      "name": "配合试打块",
+      "quantity": 1,
+      "size_print_xyz_mm": [
+        130.0,
+        60.0,
+        9.0
+      ],
+      "solid_volume_cm3": 58.43,
+      "brep_valid": true,
+      "watertight": true,
+      "positive_volume": true,
+      "orientation": "upright"
+    }
+  ],
+  "checks": {
+    "static_printed_part_overlaps_mm3": [],
+    "all_printed_parts_fit_180mm_bed_with_5mm_border": true,
+    "central_rotor_sweep_step_degrees": 5,
+    "central_rotor_static_overlap_max_mm3": 0,
+    "magnet_cup_full_rotation_envelope_collisions_mm3": [],
+    "magnet_cup_swept_envelope_radius_mm": 17.499,
+    "conservative_pendulum_to_tie_rod_vertical_clearance_mm": 17.971,
+    "central_rotor_candidates_after_exact_y_separation": 0,
+    "conservative_rotor_to_deck_clearance_mm": 39.971,
+    "central_rotor_to_tower_inner_face_y_clearance_mm": 43.0,
+    "bearing_seat_diametral_clearance_mm": 0.1999999999999993,
+    "magnet_to_package_nominal_gap_mm": 1.5,
+    "as5600_module_and_spacers_collisions_mm3": [],
+    "as5600_chip_height_from_drawing_mm": 1.7999999999999998,
+    "as5600_board_diameter_mm": 32.0,
+    "as5600_board_mount_pitch_xz_mm": [
+      17.0,
+      17.0
+    ],
+    "as5600_mount_bolt_circle_diameter_mm": 24.041630560342615,
+    "as5600_connector_to_backplate_normal_clearance_mm": 1.7000000000000002,
+    "as5600_backplate_center_y_mm": 122.89999999999999,
+    "as5600_rail_fastener_y_mm": 112.89999999999999,
+    "encoder_carrier_rail_hole_y_range_mm": [
+      100.7,
+      127.3
+    ],
+    "printed_functional_piece_count": 16
+  },
+  "limitations": [
+    "Prototype geometry only: no physical print, load, vibration or control validation.",
+    "PCB from supplied drawing, with conservative connector-depth and package-plan envelopes; actual plugs and pinout not supplied.",
+    "Assembly omits most fastener detail. No G-code or Bambu slicer settings are supplied."
+  ]
+}

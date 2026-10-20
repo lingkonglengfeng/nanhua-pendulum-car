@@ -1,0 +1,5 @@
+﻿wheel,tag,schematic_ref,driver,IN1,IN2,encoder_A,encoder_B,physical_MCU_pins
+左前,FL,U2,DRV1,FL_PWM,FL_DIR,ENC_FL_A,ENC_FL_B,TBD — 需 ATK-DMG474 主板原理图
+右前,FR,U3,DRV2,FR_PWM,FR_DIR,ENC_FR_A,ENC_FR_B,TBD — 需 ATK-DMG474 主板原理图
+左后,RL,U4,DRV3,RL_PWM,RL_DIR,ENC_RL_A,ENC_RL_B,TBD — 需 ATK-DMG474 主板原理图
+右后,RR,U5,DRV4,RR_PWM,RR_DIR,ENC_RR_A,ENC_RR_B,TBD — 需 ATK-DMG474 主板原理图

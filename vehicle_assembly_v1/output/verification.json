@@ -1,0 +1,26 @@
+{
+  "components": 360,
+  "step_solids": 360,
+  "step_valid": true,
+  "physical_body_overlap_pairs": 0,
+  "central_continuous_sweep_min_z_mm": 39.971,
+  "magnet_fastener_full_rotation_envelope_radius_mm": 19.198,
+  "rotating_fastener_motion_envelopes_clear": true,
+  "reference_envelope_xyz_mm": [
+    320.01,
+    280.05,
+    663.53
+  ],
+  "ground_at_z_mm": -63.5,
+  "rod_tip_z_mm": 600,
+  "ballast_lower_edge_from_pivot_mm": 160,
+  "ballast_washers": 2,
+  "unverified": [
+    "motor output-axis offset and shaft length",
+    "wheel hub and tread",
+    "G407/DRV8871 PCB actual shapes and mounting patterns",
+    "battery case and plugs",
+    "routing and real cable lengths",
+    "physical strength and control performance"
+  ]
+}

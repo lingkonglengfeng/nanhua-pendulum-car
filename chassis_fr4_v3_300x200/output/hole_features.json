@@ -1,0 +1,698 @@
+[
+  {
+    "group": "BASE_M5",
+    "kind": "circle",
+    "x": -55.0,
+    "y": -88.0,
+    "diameter": 5.5,
+    "id": "H001"
+  },
+  {
+    "group": "BASE_M5",
+    "kind": "circle",
+    "x": -55.0,
+    "y": -42.0,
+    "diameter": 5.5,
+    "id": "H002"
+  },
+  {
+    "group": "BASE_M5",
+    "kind": "circle",
+    "x": -55.0,
+    "y": 42.0,
+    "diameter": 5.5,
+    "id": "H003"
+  },
+  {
+    "group": "BASE_M5",
+    "kind": "circle",
+    "x": -55.0,
+    "y": 88.0,
+    "diameter": 5.5,
+    "id": "H004"
+  },
+  {
+    "group": "BASE_M5",
+    "kind": "circle",
+    "x": 55.0,
+    "y": -88.0,
+    "diameter": 5.5,
+    "id": "H005"
+  },
+  {
+    "group": "BASE_M5",
+    "kind": "circle",
+    "x": 55.0,
+    "y": -42.0,
+    "diameter": 5.5,
+    "id": "H006"
+  },
+  {
+    "group": "BASE_M5",
+    "kind": "circle",
+    "x": 55.0,
+    "y": 42.0,
+    "diameter": 5.5,
+    "id": "H007"
+  },
+  {
+    "group": "BASE_M5",
+    "kind": "circle",
+    "x": 55.0,
+    "y": 88.0,
+    "diameter": 5.5,
+    "id": "H008"
+  },
+  {
+    "group": "BOARD_M3",
+    "kind": "circle",
+    "x": -90,
+    "y": -50,
+    "diameter": 3.4,
+    "id": "H009"
+  },
+  {
+    "group": "BOARD_M3",
+    "kind": "circle",
+    "x": -90,
+    "y": -30,
+    "diameter": 3.4,
+    "id": "H010"
+  },
+  {
+    "group": "BOARD_M3",
+    "kind": "circle",
+    "x": -90,
+    "y": -10,
+    "diameter": 3.4,
+    "id": "H011"
+  },
+  {
+    "group": "BOARD_M3",
+    "kind": "circle",
+    "x": -90,
+    "y": 10,
+    "diameter": 3.4,
+    "id": "H012"
+  },
+  {
+    "group": "BOARD_M3",
+    "kind": "circle",
+    "x": -90,
+    "y": 30,
+    "diameter": 3.4,
+    "id": "H013"
+  },
+  {
+    "group": "BOARD_M3",
+    "kind": "circle",
+    "x": -90,
+    "y": 50,
+    "diameter": 3.4,
+    "id": "H014"
+  },
+  {
+    "group": "BOARD_M3",
+    "kind": "circle",
+    "x": -110,
+    "y": -50,
+    "diameter": 3.4,
+    "id": "H015"
+  },
+  {
+    "group": "BOARD_M3",
+    "kind": "circle",
+    "x": -110,
+    "y": -30,
+    "diameter": 3.4,
+    "id": "H016"
+  },
+  {
+    "group": "BOARD_M3",
+    "kind": "circle",
+    "x": -110,
+    "y": -10,
+    "diameter": 3.4,
+    "id": "H017"
+  },
+  {
+    "group": "BOARD_M3",
+    "kind": "circle",
+    "x": -110,
+    "y": 10,
+    "diameter": 3.4,
+    "id": "H018"
+  },
+  {
+    "group": "BOARD_M3",
+    "kind": "circle",
+    "x": -110,
+    "y": 30,
+    "diameter": 3.4,
+    "id": "H019"
+  },
+  {
+    "group": "BOARD_M3",
+    "kind": "circle",
+    "x": -110,
+    "y": 50,
+    "diameter": 3.4,
+    "id": "H020"
+  },
+  {
+    "group": "BOARD_M3",
+    "kind": "circle",
+    "x": -130,
+    "y": -50,
+    "diameter": 3.4,
+    "id": "H021"
+  },
+  {
+    "group": "BOARD_M3",
+    "kind": "circle",
+    "x": -130,
+    "y": -30,
+    "diameter": 3.4,
+    "id": "H022"
+  },
+  {
+    "group": "BOARD_M3",
+    "kind": "circle",
+    "x": -130,
+    "y": -10,
+    "diameter": 3.4,
+    "id": "H023"
+  },
+  {
+    "group": "BOARD_M3",
+    "kind": "circle",
+    "x": -130,
+    "y": 10,
+    "diameter": 3.4,
+    "id": "H024"
+  },
+  {
+    "group": "BOARD_M3",
+    "kind": "circle",
+    "x": -130,
+    "y": 30,
+    "diameter": 3.4,
+    "id": "H025"
+  },
+  {
+    "group": "BOARD_M3",
+    "kind": "circle",
+    "x": -130,
+    "y": 50,
+    "diameter": 3.4,
+    "id": "H026"
+  },
+  {
+    "group": "BOARD_M3",
+    "kind": "circle",
+    "x": 90,
+    "y": -50,
+    "diameter": 3.4,
+    "id": "H027"
+  },
+  {
+    "group": "BOARD_M3",
+    "kind": "circle",
+    "x": 90,
+    "y": -30,
+    "diameter": 3.4,
+    "id": "H028"
+  },
+  {
+    "group": "BOARD_M3",
+    "kind": "circle",
+    "x": 90,
+    "y": -10,
+    "diameter": 3.4,
+    "id": "H029"
+  },
+  {
+    "group": "BOARD_M3",
+    "kind": "circle",
+    "x": 90,
+    "y": 10,
+    "diameter": 3.4,
+    "id": "H030"
+  },
+  {
+    "group": "BOARD_M3",
+    "kind": "circle",
+    "x": 90,
+    "y": 30,
+    "diameter": 3.4,
+    "id": "H031"
+  },
+  {
+    "group": "BOARD_M3",
+    "kind": "circle",
+    "x": 90,
+    "y": 50,
+    "diameter": 3.4,
+    "id": "H032"
+  },
+  {
+    "group": "BOARD_M3",
+    "kind": "circle",
+    "x": 110,
+    "y": -50,
+    "diameter": 3.4,
+    "id": "H033"
+  },
+  {
+    "group": "BOARD_M3",
+    "kind": "circle",
+    "x": 110,
+    "y": -30,
+    "diameter": 3.4,
+    "id": "H034"
+  },
+  {
+    "group": "BOARD_M3",
+    "kind": "circle",
+    "x": 110,
+    "y": -10,
+    "diameter": 3.4,
+    "id": "H035"
+  },
+  {
+    "group": "BOARD_M3",
+    "kind": "circle",
+    "x": 110,
+    "y": 10,
+    "diameter": 3.4,
+    "id": "H036"
+  },
+  {
+    "group": "BOARD_M3",
+    "kind": "circle",
+    "x": 110,
+    "y": 30,
+    "diameter": 3.4,
+    "id": "H037"
+  },
+  {
+    "group": "BOARD_M3",
+    "kind": "circle",
+    "x": 110,
+    "y": 50,
+    "diameter": 3.4,
+    "id": "H038"
+  },
+  {
+    "group": "BOARD_M3",
+    "kind": "circle",
+    "x": 130,
+    "y": -50,
+    "diameter": 3.4,
+    "id": "H039"
+  },
+  {
+    "group": "BOARD_M3",
+    "kind": "circle",
+    "x": 130,
+    "y": -30,
+    "diameter": 3.4,
+    "id": "H040"
+  },
+  {
+    "group": "BOARD_M3",
+    "kind": "circle",
+    "x": 130,
+    "y": -10,
+    "diameter": 3.4,
+    "id": "H041"
+  },
+  {
+    "group": "BOARD_M3",
+    "kind": "circle",
+    "x": 130,
+    "y": 10,
+    "diameter": 3.4,
+    "id": "H042"
+  },
+  {
+    "group": "BOARD_M3",
+    "kind": "circle",
+    "x": 130,
+    "y": 30,
+    "diameter": 3.4,
+    "id": "H043"
+  },
+  {
+    "group": "BOARD_M3",
+    "kind": "circle",
+    "x": 130,
+    "y": 50,
+    "diameter": 3.4,
+    "id": "H044"
+  },
+  {
+    "group": "IMU_M3",
+    "kind": "circle",
+    "x": -10,
+    "y": -10,
+    "diameter": 3.4,
+    "id": "H045"
+  },
+  {
+    "group": "IMU_M3",
+    "kind": "circle",
+    "x": -10,
+    "y": 10,
+    "diameter": 3.4,
+    "id": "H046"
+  },
+  {
+    "group": "IMU_M3",
+    "kind": "circle",
+    "x": 10,
+    "y": -10,
+    "diameter": 3.4,
+    "id": "H047"
+  },
+  {
+    "group": "IMU_M3",
+    "kind": "circle",
+    "x": 10,
+    "y": 10,
+    "diameter": 3.4,
+    "id": "H048"
+  },
+  {
+    "group": "SENSOR_M3",
+    "kind": "slot",
+    "x": -140.0,
+    "y": -30,
+    "length": 18,
+    "width": 3.4,
+    "angle": 90,
+    "id": "H049"
+  },
+  {
+    "group": "SENSOR_M3",
+    "kind": "slot",
+    "x": -140.0,
+    "y": 0,
+    "length": 18,
+    "width": 3.4,
+    "angle": 90,
+    "id": "H050"
+  },
+  {
+    "group": "SENSOR_M3",
+    "kind": "slot",
+    "x": -140.0,
+    "y": 30,
+    "length": 18,
+    "width": 3.4,
+    "angle": 90,
+    "id": "H051"
+  },
+  {
+    "group": "SENSOR_M3",
+    "kind": "slot",
+    "x": 140.0,
+    "y": -30,
+    "length": 18,
+    "width": 3.4,
+    "angle": 90,
+    "id": "H052"
+  },
+  {
+    "group": "SENSOR_M3",
+    "kind": "slot",
+    "x": 140.0,
+    "y": 0,
+    "length": 18,
+    "width": 3.4,
+    "angle": 90,
+    "id": "H053"
+  },
+  {
+    "group": "SENSOR_M3",
+    "kind": "slot",
+    "x": 140.0,
+    "y": 30,
+    "length": 18,
+    "width": 3.4,
+    "angle": 90,
+    "id": "H054"
+  },
+  {
+    "group": "BATTERY_STRAP",
+    "kind": "slot",
+    "x": -40,
+    "y": -30,
+    "length": 18,
+    "width": 3.5,
+    "angle": 0,
+    "id": "H055"
+  },
+  {
+    "group": "BATTERY_STRAP",
+    "kind": "slot",
+    "x": -40,
+    "y": 30,
+    "length": 18,
+    "width": 3.5,
+    "angle": 0,
+    "id": "H056"
+  },
+  {
+    "group": "BATTERY_STRAP",
+    "kind": "slot",
+    "x": 40,
+    "y": -30,
+    "length": 18,
+    "width": 3.5,
+    "angle": 0,
+    "id": "H057"
+  },
+  {
+    "group": "BATTERY_STRAP",
+    "kind": "slot",
+    "x": 40,
+    "y": 30,
+    "length": 18,
+    "width": 3.5,
+    "angle": 0,
+    "id": "H058"
+  },
+  {
+    "group": "WIRE",
+    "kind": "slot",
+    "x": 0,
+    "y": -20,
+    "length": 16,
+    "width": 4,
+    "angle": 0,
+    "id": "H059"
+  },
+  {
+    "group": "WIRE",
+    "kind": "slot",
+    "x": 0,
+    "y": 20,
+    "length": 16,
+    "width": 4,
+    "angle": 0,
+    "id": "H060"
+  },
+  {
+    "group": "SIDE_M3",
+    "kind": "circle",
+    "x": -140,
+    "y": -85,
+    "diameter": 3.4,
+    "id": "H061"
+  },
+  {
+    "group": "SIDE_M3",
+    "kind": "circle",
+    "x": -140,
+    "y": -60,
+    "diameter": 3.4,
+    "id": "H062"
+  },
+  {
+    "group": "SIDE_M3",
+    "kind": "circle",
+    "x": -140,
+    "y": 60,
+    "diameter": 3.4,
+    "id": "H063"
+  },
+  {
+    "group": "SIDE_M3",
+    "kind": "circle",
+    "x": -140,
+    "y": 85,
+    "diameter": 3.4,
+    "id": "H064"
+  },
+  {
+    "group": "SIDE_M3",
+    "kind": "circle",
+    "x": 140,
+    "y": -85,
+    "diameter": 3.4,
+    "id": "H065"
+  },
+  {
+    "group": "SIDE_M3",
+    "kind": "circle",
+    "x": 140,
+    "y": -60,
+    "diameter": 3.4,
+    "id": "H066"
+  },
+  {
+    "group": "SIDE_M3",
+    "kind": "circle",
+    "x": 140,
+    "y": 60,
+    "diameter": 3.4,
+    "id": "H067"
+  },
+  {
+    "group": "SIDE_M3",
+    "kind": "circle",
+    "x": 140,
+    "y": 85,
+    "diameter": 3.4,
+    "id": "H068"
+  },
+  {
+    "group": "WHEELSET_DIRECT_M3",
+    "kind": "circle",
+    "x": -126,
+    "y": -91,
+    "diameter": 3.4,
+    "id": "H069"
+  },
+  {
+    "group": "WHEELSET_DIRECT_M3",
+    "kind": "circle",
+    "x": -126,
+    "y": -77,
+    "diameter": 3.4,
+    "id": "H070"
+  },
+  {
+    "group": "WHEELSET_DIRECT_M3",
+    "kind": "circle",
+    "x": -110,
+    "y": -91,
+    "diameter": 3.4,
+    "id": "H071"
+  },
+  {
+    "group": "WHEELSET_DIRECT_M3",
+    "kind": "circle",
+    "x": -110,
+    "y": -77,
+    "diameter": 3.4,
+    "id": "H072"
+  },
+  {
+    "group": "WHEELSET_DIRECT_M3",
+    "kind": "circle",
+    "x": -126,
+    "y": 77,
+    "diameter": 3.4,
+    "id": "H073"
+  },
+  {
+    "group": "WHEELSET_DIRECT_M3",
+    "kind": "circle",
+    "x": -126,
+    "y": 91,
+    "diameter": 3.4,
+    "id": "H074"
+  },
+  {
+    "group": "WHEELSET_DIRECT_M3",
+    "kind": "circle",
+    "x": -110,
+    "y": 77,
+    "diameter": 3.4,
+    "id": "H075"
+  },
+  {
+    "group": "WHEELSET_DIRECT_M3",
+    "kind": "circle",
+    "x": -110,
+    "y": 91,
+    "diameter": 3.4,
+    "id": "H076"
+  },
+  {
+    "group": "WHEELSET_DIRECT_M3",
+    "kind": "circle",
+    "x": 110,
+    "y": -91,
+    "diameter": 3.4,
+    "id": "H077"
+  },
+  {
+    "group": "WHEELSET_DIRECT_M3",
+    "kind": "circle",
+    "x": 110,
+    "y": -77,
+    "diameter": 3.4,
+    "id": "H078"
+  },
+  {
+    "group": "WHEELSET_DIRECT_M3",
+    "kind": "circle",
+    "x": 126,
+    "y": -91,
+    "diameter": 3.4,
+    "id": "H079"
+  },
+  {
+    "group": "WHEELSET_DIRECT_M3",
+    "kind": "circle",
+    "x": 126,
+    "y": -77,
+    "diameter": 3.4,
+    "id": "H080"
+  },
+  {
+    "group": "WHEELSET_DIRECT_M3",
+    "kind": "circle",
+    "x": 110,
+    "y": 77,
+    "diameter": 3.4,
+    "id": "H081"
+  },
+  {
+    "group": "WHEELSET_DIRECT_M3",
+    "kind": "circle",
+    "x": 110,
+    "y": 91,
+    "diameter": 3.4,
+    "id": "H082"
+  },
+  {
+    "group": "WHEELSET_DIRECT_M3",
+    "kind": "circle",
+    "x": 126,
+    "y": 77,
+    "diameter": 3.4,
+    "id": "H083"
+  },
+  {
+    "group": "WHEELSET_DIRECT_M3",
+    "kind": "circle",
+    "x": 126,
+    "y": 91,
+    "diameter": 3.4,
+    "id": "H084"
+  }
+]

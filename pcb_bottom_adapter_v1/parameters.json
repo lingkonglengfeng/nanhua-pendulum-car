@@ -1,0 +1,19 @@
+{
+  "pcb_outline_xy_mm": [70, 90],
+  "pcb_hole_pitch_xy_mm": [64, 84],
+  "pcb_thickness_reference_mm": 1.6,
+  "clearance_hole_diameter_mm": 3.4,
+  "adapter_outline_xy_mm": [80, 116],
+  "adapter_plate_thickness_mm": 4,
+  "adapter_corner_radius_mm": 5,
+  "pcb_boss_height_mm": 6,
+  "pcb_boss_seat_diameter_mm": 5.5,
+  "pcb_boss_root_diameter_mm": 9,
+  "window_xy_mm": [44, 64],
+  "window_corner_radius_mm": 5,
+  "chassis_hole_pitch_xy_mm": [40, 100],
+  "chassis_spacer_height_mm": 10,
+  "chassis_spacer_diameter_mm": 8,
+  "installation_center_xy_mm": [110, 0],
+  "chassis_step": "chassis_fr4_v3_300x200/output/step/chassis_V3_direct_14x16_300x200x4.step"
+}

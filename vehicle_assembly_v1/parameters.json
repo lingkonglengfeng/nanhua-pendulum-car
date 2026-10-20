@@ -1,0 +1,8 @@
+{
+  "pivot_height_above_deck": 320.0,
+  "default_ballast_position": 160.0,
+  "default_ballast_washers": 2,
+  "wheel_diameter_reference": 65.0,
+  "motor_family": "520",
+  "notes": "Configuration record for preview. Geometry is read from the validated V3, FR4 chassis and rod-weight projects. Editing this record alone does not resize existing STEP components."
+}

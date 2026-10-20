@@ -1,0 +1,298 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2600" height="2200" viewBox="0 0 2600 2200">
+<title>DMG474 CN8/CN10 双排座原理图参考</title>
+<defs><filter id="shadow" x="-10%" y="-10%" width="120%" height="130%"><feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#203040" flood-opacity="0.13"/></filter></defs>
+<style>text{font-family:"Microsoft YaHei","Noto Sans CJK SC",sans-serif} line,path,rect,circle,polyline{stroke-linecap:round;stroke-linejoin:round}</style>
+<rect width="2600" height="2200" fill="#ffffff"/>
+<text x="55" y="52" font-size="31" fill="#243443" text-anchor="start" font-weight="650">DMG474 · 两根牛角座排线完成四驱 + IPS200</text>
+<text x="55" y="88" font-size="17" fill="#657786" text-anchor="start" font-weight="400">无 CN2/CN3 排线；屏幕改由 CN10 的 SPI3 驱动，转接板从 5V 生成本地 3.3V。</text>
+<rect x="55" y="135" width="1190" height="900" rx="16" fill="#f6f9fb" stroke="#7f9bad" stroke-width="2" filter="url(#shadow)"/>
+<text x="83" y="177" font-size="27" fill="#243443" text-anchor="start" font-weight="650">J1  ·  接主板 CN8 / PM1</text>
+<text x="1217" y="175" font-size="14" fill="#657786" text-anchor="end" font-weight="400">2×12 原理图符号 · 1脚与防呆口按实物核对</text>
+<rect x="410" y="215" width="480" height="755" rx="9" fill="#ffffff" stroke="#547083" stroke-width="2"/>
+<line x1="426" y1="249" x2="874" y2="249" stroke="#547083" stroke-width="3"/>
+<text x="650.0" y="278" font-size="14" fill="#657786" text-anchor="middle" font-weight="400">原理图符号：奇数左 / 偶数右</text>
+<circle cx="480" cy="315" r="12" fill="#ffffff" stroke="#75479a" stroke-width="3"/>
+<text x="480" y="320" font-size="14" fill="#75479a" text-anchor="middle" font-weight="650">1</text>
+<text x="383" y="320" font-size="16" fill="#75479a" text-anchor="end" font-weight="650">01  PA6  ENC_FL_A</text>
+<line x1="393" y1="315" x2="468" y2="315" stroke="#75479a" stroke-width="2"/>
+<circle cx="820" cy="315" r="12" fill="#ffffff" stroke="#75479a" stroke-width="3"/>
+<text x="820" y="320" font-size="14" fill="#75479a" text-anchor="middle" font-weight="650">2</text>
+<text x="917" y="320" font-size="16" fill="#75479a" text-anchor="start" font-weight="650">02  PA0  ENC_RL_A</text>
+<line x1="832" y1="315" x2="905" y2="315" stroke="#75479a" stroke-width="2"/>
+<circle cx="480" cy="367" r="12" fill="#ffffff" stroke="#75479a" stroke-width="3"/>
+<text x="480" y="372" font-size="14" fill="#75479a" text-anchor="middle" font-weight="650">3</text>
+<text x="383" y="372" font-size="16" fill="#75479a" text-anchor="end" font-weight="650">03  PA7  ENC_FL_B</text>
+<line x1="393" y1="367" x2="468" y2="367" stroke="#75479a" stroke-width="2"/>
+<circle cx="820" cy="367" r="12" fill="#ffffff" stroke="#75479a" stroke-width="3"/>
+<text x="820" y="372" font-size="14" fill="#75479a" text-anchor="middle" font-weight="650">4</text>
+<text x="917" y="372" font-size="16" fill="#75479a" text-anchor="start" font-weight="650">04  PA1  ENC_RL_B</text>
+<line x1="832" y1="367" x2="905" y2="367" stroke="#75479a" stroke-width="2"/>
+<circle cx="480" cy="419" r="12" fill="#ffffff" stroke="#657786" stroke-width="3"/>
+<text x="480" y="424" font-size="14" fill="#657786" text-anchor="middle" font-weight="650">5</text>
+<text x="383" y="424" font-size="16" fill="#657786" text-anchor="end" font-weight="400">05  PE4  NC</text>
+<line x1="393" y1="419" x2="468" y2="419" stroke="#657786" stroke-width="2"/>
+<circle cx="820" cy="419" r="12" fill="#ffffff" stroke="#657786" stroke-width="3"/>
+<text x="820" y="424" font-size="14" fill="#657786" text-anchor="middle" font-weight="650">6</text>
+<text x="917" y="424" font-size="16" fill="#657786" text-anchor="start" font-weight="400">06  PA2  NC</text>
+<line x1="832" y1="419" x2="905" y2="419" stroke="#657786" stroke-width="2"/>
+<circle cx="480" cy="471" r="12" fill="#ffffff" stroke="#56616c" stroke-width="3"/>
+<text x="480" y="476" font-size="14" fill="#56616c" text-anchor="middle" font-weight="650">7</text>
+<text x="383" y="476" font-size="16" fill="#56616c" text-anchor="end" font-weight="650">07  GND  GND</text>
+<line x1="393" y1="471" x2="468" y2="471" stroke="#56616c" stroke-width="2"/>
+<circle cx="820" cy="471" r="12" fill="#ffffff" stroke="#657786" stroke-width="3"/>
+<text x="820" y="476" font-size="14" fill="#657786" text-anchor="middle" font-weight="650">8</text>
+<text x="917" y="476" font-size="16" fill="#657786" text-anchor="start" font-weight="400">08  PA3  NC</text>
+<line x1="832" y1="471" x2="905" y2="471" stroke="#657786" stroke-width="2"/>
+<circle cx="480" cy="523" r="12" fill="#ffffff" stroke="#657786" stroke-width="3"/>
+<text x="480" y="528" font-size="14" fill="#657786" text-anchor="middle" font-weight="650">9</text>
+<text x="383" y="528" font-size="16" fill="#657786" text-anchor="end" font-weight="400">09  PC5  NC</text>
+<line x1="393" y1="523" x2="468" y2="523" stroke="#657786" stroke-width="2"/>
+<circle cx="820" cy="523" r="12" fill="#ffffff" stroke="#657786" stroke-width="3"/>
+<text x="820" y="528" font-size="14" fill="#657786" text-anchor="middle" font-weight="650">10</text>
+<text x="917" y="528" font-size="16" fill="#657786" text-anchor="start" font-weight="400">10  PC1  NC</text>
+<line x1="832" y1="523" x2="905" y2="523" stroke="#657786" stroke-width="2"/>
+<circle cx="480" cy="575" r="12" fill="#ffffff" stroke="#657786" stroke-width="3"/>
+<text x="480" y="580" font-size="14" fill="#657786" text-anchor="middle" font-weight="650">11</text>
+<text x="383" y="580" font-size="16" fill="#657786" text-anchor="end" font-weight="400">11  PB2  NC</text>
+<line x1="393" y1="575" x2="468" y2="575" stroke="#657786" stroke-width="2"/>
+<circle cx="820" cy="575" r="12" fill="#ffffff" stroke="#657786" stroke-width="3"/>
+<text x="820" y="580" font-size="14" fill="#657786" text-anchor="middle" font-weight="650">12</text>
+<text x="917" y="580" font-size="16" fill="#657786" text-anchor="start" font-weight="400">12  PC2  NC</text>
+<line x1="832" y1="575" x2="905" y2="575" stroke="#657786" stroke-width="2"/>
+<circle cx="480" cy="627" r="12" fill="#ffffff" stroke="#657786" stroke-width="3"/>
+<text x="480" y="632" font-size="14" fill="#657786" text-anchor="middle" font-weight="650">13</text>
+<text x="383" y="632" font-size="16" fill="#657786" text-anchor="end" font-weight="400">13  PC4  NC</text>
+<line x1="393" y1="627" x2="468" y2="627" stroke="#657786" stroke-width="2"/>
+<circle cx="820" cy="627" r="12" fill="#ffffff" stroke="#657786" stroke-width="3"/>
+<text x="820" y="632" font-size="14" fill="#657786" text-anchor="middle" font-weight="650">14</text>
+<text x="917" y="632" font-size="16" fill="#657786" text-anchor="start" font-weight="400">14  PC3  NC</text>
+<line x1="832" y1="627" x2="905" y2="627" stroke="#657786" stroke-width="2"/>
+<circle cx="480" cy="679" r="12" fill="#ffffff" stroke="#657786" stroke-width="3"/>
+<text x="480" y="684" font-size="14" fill="#657786" text-anchor="middle" font-weight="650">15</text>
+<text x="383" y="684" font-size="16" fill="#657786" text-anchor="end" font-weight="400">15  PC0  NC</text>
+<line x1="393" y1="679" x2="468" y2="679" stroke="#657786" stroke-width="2"/>
+<circle cx="820" cy="679" r="12" fill="#ffffff" stroke="#56616c" stroke-width="3"/>
+<text x="820" y="684" font-size="14" fill="#56616c" text-anchor="middle" font-weight="650">16</text>
+<text x="917" y="684" font-size="16" fill="#56616c" text-anchor="start" font-weight="650">16  GND  GND</text>
+<line x1="832" y1="679" x2="905" y2="679" stroke="#56616c" stroke-width="2"/>
+<circle cx="480" cy="731" r="12" fill="#ffffff" stroke="#1b68a4" stroke-width="3"/>
+<text x="480" y="736" font-size="14" fill="#1b68a4" text-anchor="middle" font-weight="650">17</text>
+<text x="383" y="736" font-size="16" fill="#1b68a4" text-anchor="end" font-weight="650">17  PA8  FL_PWM</text>
+<line x1="393" y1="731" x2="468" y2="731" stroke="#1b68a4" stroke-width="2"/>
+<circle cx="820" cy="731" r="12" fill="#ffffff" stroke="#1b68a4" stroke-width="3"/>
+<text x="820" y="736" font-size="14" fill="#1b68a4" text-anchor="middle" font-weight="650">18</text>
+<text x="917" y="736" font-size="16" fill="#1b68a4" text-anchor="start" font-weight="650">18  PB13  FL_DIR</text>
+<line x1="832" y1="731" x2="905" y2="731" stroke="#1b68a4" stroke-width="2"/>
+<circle cx="480" cy="783" r="12" fill="#ffffff" stroke="#1b68a4" stroke-width="3"/>
+<text x="480" y="788" font-size="14" fill="#1b68a4" text-anchor="middle" font-weight="650">19</text>
+<text x="383" y="788" font-size="16" fill="#1b68a4" text-anchor="end" font-weight="650">19  PA9  FR_PWM</text>
+<line x1="393" y1="783" x2="468" y2="783" stroke="#1b68a4" stroke-width="2"/>
+<circle cx="820" cy="783" r="12" fill="#ffffff" stroke="#1b68a4" stroke-width="3"/>
+<text x="820" y="788" font-size="14" fill="#1b68a4" text-anchor="middle" font-weight="650">20</text>
+<text x="917" y="788" font-size="16" fill="#1b68a4" text-anchor="start" font-weight="650">20  PB14  FR_DIR</text>
+<line x1="832" y1="783" x2="905" y2="783" stroke="#1b68a4" stroke-width="2"/>
+<circle cx="480" cy="835" r="12" fill="#ffffff" stroke="#1b68a4" stroke-width="3"/>
+<text x="480" y="840" font-size="14" fill="#1b68a4" text-anchor="middle" font-weight="650">21</text>
+<text x="383" y="840" font-size="16" fill="#1b68a4" text-anchor="end" font-weight="650">21  PA10  RL_PWM</text>
+<line x1="393" y1="835" x2="468" y2="835" stroke="#1b68a4" stroke-width="2"/>
+<circle cx="820" cy="835" r="12" fill="#ffffff" stroke="#1b68a4" stroke-width="3"/>
+<text x="820" y="840" font-size="14" fill="#1b68a4" text-anchor="middle" font-weight="650">22</text>
+<text x="917" y="840" font-size="16" fill="#1b68a4" text-anchor="start" font-weight="650">22  PB15  RL_DIR</text>
+<line x1="832" y1="835" x2="905" y2="835" stroke="#1b68a4" stroke-width="2"/>
+<circle cx="480" cy="887" r="12" fill="#ffffff" stroke="#657786" stroke-width="3"/>
+<text x="480" y="892" font-size="14" fill="#657786" text-anchor="middle" font-weight="650">23</text>
+<text x="383" y="892" font-size="16" fill="#657786" text-anchor="end" font-weight="400">23  5V  NC</text>
+<line x1="393" y1="887" x2="468" y2="887" stroke="#657786" stroke-width="2"/>
+<circle cx="820" cy="887" r="12" fill="#ffffff" stroke="#657786" stroke-width="3"/>
+<text x="820" y="892" font-size="14" fill="#657786" text-anchor="middle" font-weight="650">24</text>
+<text x="917" y="892" font-size="16" fill="#657786" text-anchor="start" font-weight="400">24  PC13  NC</text>
+<line x1="832" y1="887" x2="905" y2="887" stroke="#657786" stroke-width="2"/>
+<text x="83" y="999" font-size="14" fill="#657786" text-anchor="start" font-weight="400">NC 请画不连接叉号，不能当作公共网名；23脚主板5V留空</text>
+<rect x="1355" y="135" width="1190" height="900" rx="16" fill="#f6f9fb" stroke="#7f9bad" stroke-width="2" filter="url(#shadow)"/>
+<text x="1383" y="177" font-size="27" fill="#243443" text-anchor="start" font-weight="650">J2  ·  接主板 CN10 / PM2</text>
+<text x="2517" y="175" font-size="14" fill="#657786" text-anchor="end" font-weight="400">2×12 原理图符号 · 1脚与防呆口按实物核对</text>
+<rect x="1710" y="215" width="480" height="755" rx="9" fill="#ffffff" stroke="#547083" stroke-width="2"/>
+<line x1="1726" y1="249" x2="2174" y2="249" stroke="#547083" stroke-width="3"/>
+<text x="1950.0" y="278" font-size="14" fill="#657786" text-anchor="middle" font-weight="400">原理图符号：奇数左 / 偶数右</text>
+<circle cx="1780" cy="315" r="12" fill="#ffffff" stroke="#75479a" stroke-width="3"/>
+<text x="1780" y="320" font-size="14" fill="#75479a" text-anchor="middle" font-weight="650">1</text>
+<text x="1683" y="320" font-size="16" fill="#75479a" text-anchor="end" font-weight="650">01  PD12  ENC_FR_A</text>
+<line x1="1693" y1="315" x2="1768" y2="315" stroke="#75479a" stroke-width="2"/>
+<circle cx="2120" cy="315" r="12" fill="#ffffff" stroke="#75479a" stroke-width="3"/>
+<text x="2120" y="320" font-size="14" fill="#75479a" text-anchor="middle" font-weight="650">2</text>
+<text x="2217" y="320" font-size="16" fill="#75479a" text-anchor="start" font-weight="650">02  PD3  ENC_RR_A</text>
+<line x1="2132" y1="315" x2="2205" y2="315" stroke="#75479a" stroke-width="2"/>
+<circle cx="1780" cy="367" r="12" fill="#ffffff" stroke="#75479a" stroke-width="3"/>
+<text x="1780" y="372" font-size="14" fill="#75479a" text-anchor="middle" font-weight="650">3</text>
+<text x="1683" y="372" font-size="16" fill="#75479a" text-anchor="end" font-weight="650">03  PD13  ENC_FR_B</text>
+<line x1="1693" y1="367" x2="1768" y2="367" stroke="#75479a" stroke-width="2"/>
+<circle cx="2120" cy="367" r="12" fill="#ffffff" stroke="#75479a" stroke-width="3"/>
+<text x="2120" y="372" font-size="14" fill="#75479a" text-anchor="middle" font-weight="650">4</text>
+<text x="2217" y="372" font-size="16" fill="#75479a" text-anchor="start" font-weight="650">04  PD4  ENC_RR_B</text>
+<line x1="2132" y1="367" x2="2205" y2="367" stroke="#75479a" stroke-width="2"/>
+<circle cx="1780" cy="419" r="12" fill="#ffffff" stroke="#1b68a4" stroke-width="3"/>
+<text x="1780" y="424" font-size="14" fill="#1b68a4" text-anchor="middle" font-weight="650">5</text>
+<text x="1683" y="424" font-size="16" fill="#1b68a4" text-anchor="end" font-weight="650">05  PD14  IPS_DC</text>
+<line x1="1693" y1="419" x2="1768" y2="419" stroke="#1b68a4" stroke-width="2"/>
+<circle cx="2120" cy="419" r="12" fill="#ffffff" stroke="#1b68a4" stroke-width="3"/>
+<text x="2120" y="424" font-size="14" fill="#1b68a4" text-anchor="middle" font-weight="650">6</text>
+<text x="2217" y="424" font-size="16" fill="#1b68a4" text-anchor="start" font-weight="650">06  PD7  IPS_RST</text>
+<line x1="2132" y1="419" x2="2205" y2="419" stroke="#1b68a4" stroke-width="2"/>
+<circle cx="1780" cy="471" r="12" fill="#ffffff" stroke="#56616c" stroke-width="3"/>
+<text x="1780" y="476" font-size="14" fill="#56616c" text-anchor="middle" font-weight="650">7</text>
+<text x="1683" y="476" font-size="16" fill="#56616c" text-anchor="end" font-weight="650">07  GND  GND</text>
+<line x1="1693" y1="471" x2="1768" y2="471" stroke="#56616c" stroke-width="2"/>
+<circle cx="2120" cy="471" r="12" fill="#ffffff" stroke="#657786" stroke-width="3"/>
+<text x="2120" y="476" font-size="14" fill="#657786" text-anchor="middle" font-weight="650">8</text>
+<text x="2217" y="476" font-size="16" fill="#657786" text-anchor="start" font-weight="400">08  PB1  NC</text>
+<line x1="2132" y1="471" x2="2205" y2="471" stroke="#657786" stroke-width="2"/>
+<circle cx="1780" cy="523" r="12" fill="#ffffff" stroke="#657786" stroke-width="3"/>
+<text x="1780" y="528" font-size="14" fill="#657786" text-anchor="middle" font-weight="650">9</text>
+<text x="1683" y="528" font-size="16" fill="#657786" text-anchor="end" font-weight="400">09  PB0  NC</text>
+<line x1="1693" y1="523" x2="1768" y2="523" stroke="#657786" stroke-width="2"/>
+<circle cx="2120" cy="523" r="12" fill="#ffffff" stroke="#657786" stroke-width="3"/>
+<text x="2120" y="528" font-size="14" fill="#657786" text-anchor="middle" font-weight="650">10</text>
+<text x="2217" y="528" font-size="16" fill="#657786" text-anchor="start" font-weight="400">10  PE7  NC</text>
+<line x1="2132" y1="523" x2="2205" y2="523" stroke="#657786" stroke-width="2"/>
+<circle cx="1780" cy="575" r="12" fill="#ffffff" stroke="#657786" stroke-width="3"/>
+<text x="1780" y="580" font-size="14" fill="#657786" text-anchor="middle" font-weight="650">11</text>
+<text x="1683" y="580" font-size="16" fill="#657786" text-anchor="end" font-weight="400">11  PA4  NC</text>
+<line x1="1693" y1="575" x2="1768" y2="575" stroke="#657786" stroke-width="2"/>
+<circle cx="2120" cy="575" r="12" fill="#ffffff" stroke="#657786" stroke-width="3"/>
+<text x="2120" y="580" font-size="14" fill="#657786" text-anchor="middle" font-weight="650">12</text>
+<text x="2217" y="580" font-size="16" fill="#657786" text-anchor="start" font-weight="400">12  PE8  NC</text>
+<line x1="2132" y1="575" x2="2205" y2="575" stroke="#657786" stroke-width="2"/>
+<circle cx="1780" cy="627" r="12" fill="#ffffff" stroke="#657786" stroke-width="3"/>
+<text x="1780" y="632" font-size="14" fill="#657786" text-anchor="middle" font-weight="650">13</text>
+<text x="1683" y="632" font-size="16" fill="#657786" text-anchor="end" font-weight="400">13  PA5  NC</text>
+<line x1="1693" y1="627" x2="1768" y2="627" stroke="#657786" stroke-width="2"/>
+<circle cx="2120" cy="627" r="12" fill="#ffffff" stroke="#657786" stroke-width="3"/>
+<text x="2120" y="632" font-size="14" fill="#657786" text-anchor="middle" font-weight="650">14</text>
+<text x="2217" y="632" font-size="16" fill="#657786" text-anchor="start" font-weight="400">14  PE10  NC</text>
+<line x1="2132" y1="627" x2="2205" y2="627" stroke="#657786" stroke-width="2"/>
+<circle cx="1780" cy="679" r="12" fill="#ffffff" stroke="#657786" stroke-width="3"/>
+<text x="1780" y="684" font-size="14" fill="#657786" text-anchor="middle" font-weight="650">15</text>
+<text x="1683" y="684" font-size="16" fill="#657786" text-anchor="end" font-weight="400">15  PE9  NC</text>
+<line x1="1693" y1="679" x2="1768" y2="679" stroke="#657786" stroke-width="2"/>
+<circle cx="2120" cy="679" r="12" fill="#ffffff" stroke="#56616c" stroke-width="3"/>
+<text x="2120" y="684" font-size="14" fill="#56616c" text-anchor="middle" font-weight="650">16</text>
+<text x="2217" y="684" font-size="16" fill="#56616c" text-anchor="start" font-weight="650">16  GND  GND</text>
+<line x1="2132" y1="679" x2="2205" y2="679" stroke="#56616c" stroke-width="2"/>
+<circle cx="1780" cy="731" r="12" fill="#ffffff" stroke="#157b7a" stroke-width="3"/>
+<text x="1780" y="736" font-size="14" fill="#157b7a" text-anchor="middle" font-weight="650">17</text>
+<text x="1683" y="736" font-size="16" fill="#157b7a" text-anchor="end" font-weight="650">17  PC6  I2C4_SCL</text>
+<line x1="1693" y1="731" x2="1768" y2="731" stroke="#157b7a" stroke-width="2"/>
+<circle cx="2120" cy="731" r="12" fill="#ffffff" stroke="#1b68a4" stroke-width="3"/>
+<text x="2120" y="736" font-size="14" fill="#1b68a4" text-anchor="middle" font-weight="650">18</text>
+<text x="2217" y="736" font-size="16" fill="#1b68a4" text-anchor="start" font-weight="650">18  PC10  IPS_SCK</text>
+<line x1="2132" y1="731" x2="2205" y2="731" stroke="#1b68a4" stroke-width="2"/>
+<circle cx="1780" cy="783" r="12" fill="#ffffff" stroke="#157b7a" stroke-width="3"/>
+<text x="1780" y="788" font-size="14" fill="#157b7a" text-anchor="middle" font-weight="650">19</text>
+<text x="1683" y="788" font-size="16" fill="#157b7a" text-anchor="end" font-weight="650">19  PC7  I2C4_SDA</text>
+<line x1="1693" y1="783" x2="1768" y2="783" stroke="#157b7a" stroke-width="2"/>
+<circle cx="2120" cy="783" r="12" fill="#ffffff" stroke="#1b68a4" stroke-width="3"/>
+<text x="2120" y="788" font-size="14" fill="#1b68a4" text-anchor="middle" font-weight="650">20</text>
+<text x="2217" y="788" font-size="16" fill="#1b68a4" text-anchor="start" font-weight="650">20  PC11  RR_DIR</text>
+<line x1="2132" y1="783" x2="2205" y2="783" stroke="#1b68a4" stroke-width="2"/>
+<circle cx="1780" cy="835" r="12" fill="#ffffff" stroke="#1b68a4" stroke-width="3"/>
+<text x="1780" y="840" font-size="14" fill="#1b68a4" text-anchor="middle" font-weight="650">21</text>
+<text x="1683" y="840" font-size="16" fill="#1b68a4" text-anchor="end" font-weight="650">21  PC8  RR_PWM</text>
+<line x1="1693" y1="835" x2="1768" y2="835" stroke="#1b68a4" stroke-width="2"/>
+<circle cx="2120" cy="835" r="12" fill="#ffffff" stroke="#1b68a4" stroke-width="3"/>
+<text x="2120" y="840" font-size="14" fill="#1b68a4" text-anchor="middle" font-weight="650">22</text>
+<text x="2217" y="840" font-size="16" fill="#1b68a4" text-anchor="start" font-weight="650">22  PC12  IPS_MOSI</text>
+<line x1="2132" y1="835" x2="2205" y2="835" stroke="#1b68a4" stroke-width="2"/>
+<circle cx="1780" cy="887" r="12" fill="#ffffff" stroke="#1b68a4" stroke-width="3"/>
+<text x="1780" y="892" font-size="14" fill="#1b68a4" text-anchor="middle" font-weight="650">23</text>
+<text x="1683" y="892" font-size="16" fill="#1b68a4" text-anchor="end" font-weight="650">23  5V  VCC5_TO_REG</text>
+<line x1="1693" y1="887" x2="1768" y2="887" stroke="#1b68a4" stroke-width="2"/>
+<circle cx="2120" cy="887" r="12" fill="#ffffff" stroke="#1b68a4" stroke-width="3"/>
+<text x="2120" y="892" font-size="14" fill="#1b68a4" text-anchor="middle" font-weight="650">24</text>
+<text x="2217" y="892" font-size="16" fill="#1b68a4" text-anchor="start" font-weight="650">24  PD11  IPS_CS</text>
+<line x1="2132" y1="887" x2="2205" y2="887" stroke="#1b68a4" stroke-width="2"/>
+<text x="1383" y="999" font-size="14" fill="#657786" text-anchor="start" font-weight="400">NC 画不连接叉号；CN10-23 的5V只送本地稳压器</text>
+<rect x="1137" y="875" width="326" height="86" rx="10" fill="#f6fbf7" stroke="#8fb9a0" stroke-width="2"/>
+<text x="1300" y="906" font-size="17" fill="#2e7d59" text-anchor="middle" font-weight="650">本地3.3V / 共地</text>
+<text x="1300" y="934" font-size="14" fill="#56616c" text-anchor="middle" font-weight="400">5V: CN10-23  ·  GND: 7/16脚</text>
+<text x="55" y="1090" font-size="22" fill="#243443" text-anchor="start" font-weight="650">转接板端子模板（自定义线序；每个轮位复制一套）</text>
+<rect x="55" y="1110" width="585" height="180" rx="12" fill="#f5faff" stroke="#8caec8" stroke-width="2"/>
+<text x="73" y="1139" font-size="18" fill="#1b68a4" text-anchor="start" font-weight="650">J_DRV_FL  · DRV8871</text>
+<text x="73" y="1167" font-size="16" fill="#56616c" text-anchor="True" font-weight="400">1  GND</text>
+<text x="73" y="1194" font-size="16" fill="#1b68a4" text-anchor="start" font-weight="400">2  IN1 / PWM   FL_PWM</text>
+<text x="73" y="1221" font-size="16" fill="#1b68a4" text-anchor="start" font-weight="400">3  IN2 / DIR   FL_DIR</text>
+<text x="73" y="1253" font-size="13" fill="#657786" text-anchor="start" font-weight="400">仅接 GND/IN1/IN2；模块 VM 针留空</text>
+<rect x="685" y="1110" width="585" height="180" rx="12" fill="#f5faff" stroke="#8caec8" stroke-width="2"/>
+<text x="703" y="1139" font-size="18" fill="#1b68a4" text-anchor="start" font-weight="650">J_DRV_FR  · DRV8871</text>
+<text x="703" y="1167" font-size="16" fill="#56616c" text-anchor="True" font-weight="400">1  GND</text>
+<text x="703" y="1194" font-size="16" fill="#1b68a4" text-anchor="start" font-weight="400">2  IN1 / PWM   FR_PWM</text>
+<text x="703" y="1221" font-size="16" fill="#1b68a4" text-anchor="start" font-weight="400">3  IN2 / DIR   FR_DIR</text>
+<text x="703" y="1253" font-size="13" fill="#657786" text-anchor="start" font-weight="400">仅接 GND/IN1/IN2；模块 VM 针留空</text>
+<rect x="1315" y="1110" width="585" height="180" rx="12" fill="#f5faff" stroke="#8caec8" stroke-width="2"/>
+<text x="1333" y="1139" font-size="18" fill="#1b68a4" text-anchor="start" font-weight="650">J_DRV_RL  · DRV8871</text>
+<text x="1333" y="1167" font-size="16" fill="#56616c" text-anchor="True" font-weight="400">1  GND</text>
+<text x="1333" y="1194" font-size="16" fill="#1b68a4" text-anchor="start" font-weight="400">2  IN1 / PWM   RL_PWM</text>
+<text x="1333" y="1221" font-size="16" fill="#1b68a4" text-anchor="start" font-weight="400">3  IN2 / DIR   RL_DIR</text>
+<text x="1333" y="1253" font-size="13" fill="#657786" text-anchor="start" font-weight="400">仅接 GND/IN1/IN2；模块 VM 针留空</text>
+<rect x="1945" y="1110" width="585" height="180" rx="12" fill="#f5faff" stroke="#8caec8" stroke-width="2"/>
+<text x="1963" y="1139" font-size="18" fill="#1b68a4" text-anchor="start" font-weight="650">J_DRV_RR  · DRV8871</text>
+<text x="1963" y="1167" font-size="16" fill="#56616c" text-anchor="True" font-weight="400">1  GND</text>
+<text x="1963" y="1194" font-size="16" fill="#1b68a4" text-anchor="start" font-weight="400">2  IN1 / PWM   RR_PWM</text>
+<text x="1963" y="1221" font-size="16" fill="#1b68a4" text-anchor="start" font-weight="400">3  IN2 / DIR   RR_DIR</text>
+<text x="1963" y="1253" font-size="13" fill="#657786" text-anchor="start" font-weight="400">仅接 GND/IN1/IN2；模块 VM 针留空</text>
+<text x="55" y="1310" font-size="22" fill="#243443" text-anchor="start" font-weight="650">反馈与 I²C 端子（自定义线序；不是现有模块的原厂针序）</text>
+<rect x="55" y="1330" width="435" height="170" rx="12" fill="#fbf7ff" stroke="#b195c2" stroke-width="2"/>
+<text x="71" y="1358" font-size="18" fill="#75479a" text-anchor="start" font-weight="650">J_ENC_FL</text>
+<text x="71" y="1388" font-size="15" fill="#2e7d59" text-anchor="start" font-weight="400">1  3V3</text>
+<text x="71" y="1414" font-size="15" fill="#56616c" text-anchor="start" font-weight="400">2  GND</text>
+<text x="71" y="1440" font-size="15" fill="#75479a" text-anchor="start" font-weight="400">3  A   ENC_FL_A</text>
+<text x="71" y="1466" font-size="15" fill="#75479a" text-anchor="start" font-weight="400">4  B   ENC_FL_B</text>
+<rect x="530" y="1330" width="435" height="170" rx="12" fill="#fbf7ff" stroke="#b195c2" stroke-width="2"/>
+<text x="546" y="1358" font-size="18" fill="#75479a" text-anchor="start" font-weight="650">J_ENC_FR</text>
+<text x="546" y="1388" font-size="15" fill="#2e7d59" text-anchor="start" font-weight="400">1  3V3</text>
+<text x="546" y="1414" font-size="15" fill="#56616c" text-anchor="start" font-weight="400">2  GND</text>
+<text x="546" y="1440" font-size="15" fill="#75479a" text-anchor="start" font-weight="400">3  A   ENC_FR_A</text>
+<text x="546" y="1466" font-size="15" fill="#75479a" text-anchor="start" font-weight="400">4  B   ENC_FR_B</text>
+<rect x="1005" y="1330" width="435" height="170" rx="12" fill="#fbf7ff" stroke="#b195c2" stroke-width="2"/>
+<text x="1021" y="1358" font-size="18" fill="#75479a" text-anchor="start" font-weight="650">J_ENC_RL</text>
+<text x="1021" y="1388" font-size="15" fill="#2e7d59" text-anchor="start" font-weight="400">1  3V3</text>
+<text x="1021" y="1414" font-size="15" fill="#56616c" text-anchor="start" font-weight="400">2  GND</text>
+<text x="1021" y="1440" font-size="15" fill="#75479a" text-anchor="start" font-weight="400">3  A   ENC_RL_A</text>
+<text x="1021" y="1466" font-size="15" fill="#75479a" text-anchor="start" font-weight="400">4  B   ENC_RL_B</text>
+<rect x="1480" y="1330" width="435" height="170" rx="12" fill="#fbf7ff" stroke="#b195c2" stroke-width="2"/>
+<text x="1496" y="1358" font-size="18" fill="#75479a" text-anchor="start" font-weight="650">J_ENC_RR</text>
+<text x="1496" y="1388" font-size="15" fill="#2e7d59" text-anchor="start" font-weight="400">1  3V3</text>
+<text x="1496" y="1414" font-size="15" fill="#56616c" text-anchor="start" font-weight="400">2  GND</text>
+<text x="1496" y="1440" font-size="15" fill="#75479a" text-anchor="start" font-weight="400">3  A   ENC_RR_A</text>
+<text x="1496" y="1466" font-size="15" fill="#75479a" text-anchor="start" font-weight="400">4  B   ENC_RR_B</text>
+<rect x="1980" y="1330" width="565" height="170" rx="12" fill="#f4fbfb" stroke="#83b7b5" stroke-width="2"/>
+<text x="1998" y="1358" font-size="18" fill="#157b7a" text-anchor="start" font-weight="650">J_AS5600  · I²C</text>
+<text x="1998" y="1388" font-size="15" fill="#2e7d59" text-anchor="start" font-weight="400">1  3V3</text>
+<text x="1998" y="1414" font-size="15" fill="#56616c" text-anchor="start" font-weight="400">2  GND</text>
+<text x="1998" y="1440" font-size="15" fill="#157b7a" text-anchor="start" font-weight="400">3  SCL   PC6 / I2C_SCL</text>
+<text x="1998" y="1466" font-size="15" fill="#157b7a" text-anchor="start" font-weight="400">4  SDA   PC7 / I2C_SDA</text>
+<text x="55" y="1525" font-size="24" fill="#243443" text-anchor="start" font-weight="650">屏幕占用 CN10 空脚；右后轮 DIR 改到 PC11 / CN10-20</text>
+<rect x="55" y="1545" width="2490" height="225" rx="15" fill="#f2fafc" stroke="#7daeb9" stroke-width="2"/>
+<text x="80" y="1585" font-size="21" fill="#157b7a" text-anchor="start" font-weight="650">IPS200 · SPI3 单向发送</text>
+<text x="80" y="1623" font-size="18" fill="#1b68a4" text-anchor="start" font-weight="400">SCK  ← CN10-18  PC10</text>
+<text x="80" y="1662" font-size="18" fill="#1b68a4" text-anchor="start" font-weight="400">MOSI  ← CN10-22  PC12</text>
+<text x="80" y="1701" font-size="18" fill="#1b68a4" text-anchor="start" font-weight="400">CS  ← CN10-24  PD11</text>
+<text x="380" y="1623" font-size="18" fill="#1b68a4" text-anchor="start" font-weight="400">DC  ← CN10-5  PD14</text>
+<text x="380" y="1662" font-size="18" fill="#1b68a4" text-anchor="start" font-weight="400">RST  ← CN10-6  PD7</text>
+<text x="720" y="1587" font-size="20" fill="#157b7a" text-anchor="start" font-weight="650">J_IPS · 本板自定义 8 针</text>
+<text x="720" y="1625" font-size="18" fill="#243443" text-anchor="start" font-weight="400">1 GND    2 3V3    3 SCK    4 MOSI</text>
+<text x="720" y="1665" font-size="18" fill="#243443" text-anchor="start" font-weight="400">5 CS       6 DC       7 RST      8 BLK*</text>
+<text x="720" y="1709" font-size="17" fill="#bd5146" text-anchor="start" font-weight="400">*背光接法按模块实物；不直接假设限流</text>
+<text x="1440" y="1587" font-size="20" fill="#2e7d59" text-anchor="start" font-weight="650">CN10-23  5V → U_REG → 3V3_LOCAL</text>
+<text x="1440" y="1626" font-size="18" fill="#2e7d59" text-anchor="start" font-weight="400">本地 3.3V → 编码器 / AS5600 / IPS</text>
+<text x="1440" y="1665" font-size="17" fill="#657786" text-anchor="start" font-weight="400">U_REG 输入/输出电容按选定芯片数据手册</text>
+<text x="1440" y="1704" font-size="17" fill="#bd5146" text-anchor="start" font-weight="400">仅信号与传感器电流；电机大电流单独分电</text>
+<text x="1440" y="1742" font-size="18" fill="#157b7a" text-anchor="start" font-weight="650">主板 CN2 / CN3 均无需排线</text>
+<rect x="55" y="1835" width="2490" height="325" rx="14" fill="#fffaf4" stroke="#d3ae78" stroke-width="2"/>
+<text x="78" y="1871" font-size="22" fill="#bd5146" text-anchor="start" font-weight="650">上电前与原理图绘制注意</text>
+<text x="78" y="1910" font-size="17" fill="#657786" text-anchor="start" font-weight="400">• 主板仅连 CN8→J1、CN10→J2 两根 24 芯 1:1 排线；两个牛角座的 1 脚、防呆口和排线方向实物核对。</text>
+<text x="78" y="1949" font-size="17" fill="#657786" text-anchor="start" font-weight="400">• CN10-23 是主板 5V，单点喂 U_REG；CN8-23 留空。U_REG 的 3.3V 不并接主板 CN2-1。</text>
+<text x="78" y="1988" font-size="17" fill="#657786" text-anchor="start" font-weight="400">• CN8/CN10 的 7、16 脚均为 GND；逻辑/传感器共地，电机 POWER− 走独立粗线回分电点。</text>
+<text x="78" y="2027" font-size="17" fill="#657786" text-anchor="start" font-weight="400">• I²C4 仍在 PC6/PC7；它们还接板载步进/舵机电路，断开 P7/CN14 步进供电并测波形。</text>
+<text x="78" y="2066" font-size="17" fill="#657786" text-anchor="start" font-weight="400">• IPS 模块 VCC、BLK、插针顺序和总电流待实物核对；稳压器容量及散热按实际负载选择。</text>
+<text x="78" y="2105" font-size="17" fill="#657786" text-anchor="start" font-weight="400">• DRV8871 的 IN1/IN2: 10正转、01反转、00滑行、11刹车；*_DIR是IN2控制网名，模块VM针非3.3V。</text>
+</svg>

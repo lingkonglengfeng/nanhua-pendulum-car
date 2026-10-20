@@ -1,0 +1,10 @@
+{
+  "svg_xml_parse": true,
+  "svg_png_render": true,
+  "four_independent_motor_channels": true,
+  "driver_VCC_headers_not_connected": true,
+  "sensor_supply_not_motor_rail": true,
+  "external_3V3_not_paralleled_with_main_3V3": true,
+  "logical_net_duplicates": false,
+  "physical_pin_map_validated": false
+}

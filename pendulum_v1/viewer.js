@@ -1,0 +1,21 @@
+const DATA=__SCENE_DATA__;const H=__PIVOT__;
+const canvas=document.getElementById('view');
+const renderer=new THREE.WebGLRenderer({canvas,antialias:true,alpha:true});
+renderer.setPixelRatio(Math.min(devicePixelRatio||1,2));renderer.localClippingEnabled=true;
+const scene=new THREE.Scene();
+scene.add(new THREE.HemisphereLight(0xffffff,0x526576,2.1));
+const light=new THREE.DirectionalLight(0xffffff,2.2);light.position.set(-180,-240,680);scene.add(light);
+const camera=new THREE.OrthographicCamera(-200,200,350,-350,.1,4000);camera.up.set(0,0,1);
+const rotor=new THREE.Group();rotor.position.set(0,0,H);scene.add(rotor);
+const meshes=[];
+for(const o of DATA){const geometry=new THREE.BufferGeometry();let vertices=o.v.flat();if(o.group==='rotor'){for(let i=2;i<vertices.length;i+=3)vertices[i]-=H}geometry.setAttribute('position',new THREE.Float32BufferAttribute(vertices,3));geometry.setIndex(o.f.flat());geometry.computeVertexNormals();const material=new THREE.MeshStandardMaterial({color:o.color,roughness:.7,metalness:o.group==='hardware'?.35:.08,side:THREE.DoubleSide});const mesh=new THREE.Mesh(geometry,material);mesh.userData=o;o.group==='rotor'?rotor.add(mesh):scene.add(mesh);meshes.push(mesh)}
+const points=[];for(let a=0;a<=360;a+=2){let r=a*Math.PI/180;points.push(new THREE.Vector3(280*Math.sin(r),0,H+280*Math.cos(r)))}const sweep=new THREE.Line(new THREE.BufferGeometry().setFromPoints(points),new THREE.LineDashedMaterial({color:0xbc8743,dashSize:5,gapSize:5}));sweep.computeLineDistances();scene.add(sweep);
+let yaw=-.78,pitch=.22,zoom=1,target=new THREE.Vector3(0,0,285),detail=false,angle=0,drag=null,queued=false;
+function requestDraw(){if(!queued){queued=true;requestAnimationFrame(()=>{queued=false;draw()})}}
+function draw(){const rect=canvas.parentElement.getBoundingClientRect(),W=rect.width,HH=rect.height;renderer.setSize(W,HH,false);let unitScale=Math.min(W/(detail?280:440),HH/(detail?215:700))*zoom;camera.left=-W/2/unitScale;camera.right=W/2/unitScale;camera.top=HH/2/unitScale;camera.bottom=-HH/2/unitScale;camera.position.set(target.x+1000*Math.sin(yaw)*Math.cos(pitch),target.y-1000*Math.cos(yaw)*Math.cos(pitch),target.z+1000*Math.sin(pitch));camera.lookAt(target);camera.updateProjectionMatrix();rotor.rotation.y=angle*Math.PI/180;
+for(const mesh of meshes){let o=mesh.userData;mesh.visible=(!o.reference||document.getElementById('refs').checked)&&!(detail&&(/base_|lower_|splice_|M4_tie|CHASSIS|tube_/.test(o.name)));mesh.material.clippingPlanes=detail&&o.name.startsWith('upper')?[new THREE.Plane(new THREE.Vector3(0,0,1),-(H-35))]:[]}
+sweep.visible=document.getElementById('sweep').checked&&!detail;renderer.render(scene,camera);canvas.dataset.rendered='true';canvas.dataset.angle=String(angle)}
+function mode(isDetail){detail=isDetail;target=isDetail?new THREE.Vector3(0,25,H+5):new THREE.Vector3(0,0,285);zoom=1;document.getElementById('detail').setAttribute('aria-pressed',String(detail));document.getElementById('all').setAttribute('aria-pressed',String(!detail));requestDraw()}
+document.getElementById('all').onclick=()=>mode(false);document.getElementById('detail').onclick=()=>mode(true);document.getElementById('front').onclick=()=>{yaw=Math.PI/2;pitch=0;requestDraw()};document.getElementById('side').onclick=()=>{yaw=0;pitch=0;requestDraw()};document.getElementById('reset').onclick=()=>{yaw=-.78;pitch=.22;angle=0;document.getElementById('angle').value=0;document.getElementById('angleText').textContent='0°';mode(false)};
+document.getElementById('angle').oninput=e=>{angle=+e.target.value;document.getElementById('angleText').textContent=angle+'°';requestDraw()};document.getElementById('refs').onchange=requestDraw;document.getElementById('sweep').onchange=requestDraw;
+canvas.onpointerdown=e=>{drag=[e.clientX,e.clientY];canvas.setPointerCapture(e.pointerId)};canvas.onpointermove=e=>{if(drag){yaw-=(e.clientX-drag[0])*.008;pitch=Math.max(-1.35,Math.min(1.35,pitch+(e.clientY-drag[1])*.006));drag=[e.clientX,e.clientY];requestDraw()}};canvas.onpointerup=()=>drag=null;canvas.onpointercancel=()=>drag=null;canvas.addEventListener('wheel',e=>{e.preventDefault();zoom=Math.max(.4,Math.min(5,zoom*Math.exp(-e.deltaY*.001)));requestDraw()},{passive:false});new ResizeObserver(requestDraw).observe(canvas.parentElement);requestDraw();

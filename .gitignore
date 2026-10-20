@@ -1,0 +1,63 @@
+# Local environments and automation caches
+/.cad-venv/
+**/.venv/
+**/__pycache__/
+*.py[cod]
+**/.playwright-cli/
+**/node_modules/
+.DS_Store
+Thumbs.db
+
+# Vendor media, working archives and superseded firmware; keep local originals
+/【正点原子】DMG474 电机开发板/
+/artifacts/
+/blance_car_V1.0/
+/center_slot_adapter_preview_v1/
+/preview_width200/
+/*.zip
+/*.7z
+/*.html
+
+# Keil personal debugger state and compiler outputs
+*.uvguix.*
+*.uvoptx
+*.o
+*.obj
+*.d
+*.crf
+*.axf
+*.hex
+*.bin
+*.map
+*.lst
+*.htm
+*.lnp
+*.iex
+*.tra
+*.sfr
+*.bak
+*.dep
+*.exe
+*.pdb
+*.ilk
+/f103_bringup/MDK-ARM/speed_pid_build/before_*/
+/f103_bringup/MDK-ARM/speed_pid_build/backup/
+/f103_bringup/MDK-ARM/speed_pid_build/host_tests/
+
+# Bulk capture, UI verification output and build logs
+/f103_bringup/logs/
+/f103_bringup/output/
+*.log
+!/f103_bringup/tools/as5600-monitor/samples/*.log
+
+# Serial monitor runtime state
+/f103_bringup/tools/as5600-monitor/server.pid
+/f103_bringup/tools/as5600-monitor/monitor-info.json
+/f103_bringup/tools/as5600-monitor/last-url.txt
+
+# Credentials and machine-local settings
+.env
+.env.*
+!.env.example
+*.pem
+*.key

@@ -1,0 +1,33 @@
+{
+  "01_base_shoe_geometry_difference_mm3": 0.0,
+  "01_base_shoe_stl_byte_identical": true,
+  "10_fit_coupon_geometry_difference_mm3": 0.0,
+  "10_fit_coupon_stl_byte_identical": true,
+  "lower_arm_z8_to_z34_base_interface_difference_mm3": 0.0,
+  "lower_window_fillet_added_material_mm3": 180.75787496717993,
+  "lower_arm_removed_material_mm3": 0.0,
+  "interface_and_fastener_access_checks": [
+    "bearing_seat",
+    "bearing_shoulder_clearance",
+    "base_tie_hole_-38",
+    "base_tie_hole_38",
+    "lower_splice_-16",
+    "upper_splice_-16",
+    "lower_splice_16",
+    "upper_splice_16",
+    "hub_shaft",
+    "hub_tube",
+    "carrier_screw_head_access_-23",
+    "carrier_screw_head_access_23"
+  ],
+  "fillets_mm": {
+    "lower_window": 4,
+    "upper_window": 3,
+    "hub_T_root": 2,
+    "rail_root": 2.5,
+    "carrier_root": 2,
+    "splice_outline": 4,
+    "cover_outline": 3
+  },
+  "not_claimed": "No FEA, fatigue life, physical fit, or measured strength improvement."
+}

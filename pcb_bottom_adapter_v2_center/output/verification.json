@@ -1,0 +1,64 @@
+{
+  "adapter": {
+    "valid_solid": true,
+    "watertight_stl": true,
+    "step_readback": true,
+    "volume_cm3": 30.544
+  },
+  "spacer": {
+    "valid_solid": true,
+    "watertight_stl": true,
+    "step_readback": true,
+    "volume_cm3": 0.412
+  },
+  "revision": "V2_center_4_slots",
+  "installation_center_xy_mm": [
+    0,
+    0
+  ],
+  "pcb_hole_pitch_xy_mm": [
+    64,
+    84
+  ],
+  "chassis_slot_centers_xy_mm": [
+    [
+      -40.0,
+      -30.0
+    ],
+    [
+      -40.0,
+      30.0
+    ],
+    [
+      40.0,
+      -30.0
+    ],
+    [
+      40.0,
+      30.0
+    ]
+  ],
+  "chassis_slot_size_mm": [
+    18,
+    3.5
+  ],
+  "chassis_existing_slots_match": true,
+  "top_washer_diameter_mm": 9,
+  "top_washer_transverse_bearing_each_side_mm": 2.75,
+  "spacer_transverse_bearing_each_side_mm": 2.25,
+  "all_modeled_body_interferences": [],
+  "assembly_step_solids": 37,
+  "old_battery_requires_relocation": true,
+  "old_battery_pcb_overlap_mm3": 5600.0,
+  "minimum_top_washer_to_existing_base_gap_mm": 0.5,
+  "pcb_top_z_mm": -24,
+  "pcb_bottom_z_reference_mm": -25.6,
+  "pcb_rear_gap_mm": 6,
+  "physical_fit_tested": false,
+  "unknowns": [
+    "actual PCB component and connector envelopes",
+    "actual PCB thickness (modeled 1.6 mm)",
+    "wheelset body intrusion and ground clearance",
+    "new battery location"
+  ]
+}

@@ -1,0 +1,260 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2000" height="1640" viewBox="0 0 2000 1640">
+<title>倒立摆整车接线总图 ATK-DMG474 + 四路DRV8871</title>
+<rect width="2000" height="1640" fill="white"/>
+<style>text{font-family:"Microsoft YaHei","Noto Sans CJK SC",sans-serif}path,line{stroke-linecap:round;stroke-linejoin:round}</style>
+<text x="65" y="60" font-size="34" fill="#213547" text-anchor="start" font-weight="600">倒立摆整车接线总图</text>
+<text x="65" y="99" font-size="22" fill="#a46418" text-anchor="start" font-weight="400">按照片采用 ATK-DMG474；网络连接方案 V1 · 主控物理脚号尚未确认</text>
+<text x="1930" y="65" font-size="20" fill="#5d7081" text-anchor="end" font-weight="400">01 / 02</text>
+<rect x="65" y="140" width="265" height="125" rx="8" fill="#fff5f3" stroke="#dca49f" stroke-width="2"/>
+<text x="85" y="174" font-size="24" fill="#213547" text-anchor="start" font-weight="600">B1  3S 电池</text>
+<text x="85" y="208" font-size="18" fill="#5d7081" text-anchor="start" font-weight="400">11.1 V 标称 / 12.6 V 满电</text>
+<text x="85" y="239" font-size="18" fill="#5d7081" text-anchor="start" font-weight="400">使用电池放电端</text>
+<circle cx="330" cy="170" r="4" fill="white" stroke="#c33c37" stroke-width="2"/>
+<text x="307" y="163" font-size="22" fill="#c33c37" text-anchor="start" font-weight="400">+</text>
+<circle cx="330" cy="225" r="4" fill="white" stroke="#5e6872" stroke-width="2"/>
+<text x="307" y="219" font-size="22" fill="#5e6872" text-anchor="start" font-weight="400">−</text>
+<path d="M330,170 L395,170" fill="none" stroke="#c33c37" stroke-width="4"/>
+<rect x="395" y="158" width="60" height="24" rx="1" fill="#fff" stroke="#c33c37" stroke-width="2"/>
+<text x="425" y="145" font-size="19" fill="#c33c37" text-anchor="middle" font-weight="400">F1</text>
+<path d="M455,170 L515,170" fill="none" stroke="#c33c37" stroke-width="4"/>
+<circle cx="515" cy="170" r="4" fill="#c33c37"/>
+<path d="M515,170 L548,149" fill="none" stroke="#c33c37" stroke-width="3"/>
+<circle cx="560" cy="170" r="4" fill="#c33c37"/>
+<path d="M560,170 L700,170" fill="none" stroke="#c33c37" stroke-width="4"/>
+<text x="515" y="211" font-size="18" fill="#5d7081" text-anchor="start" font-weight="400">S0 总电源</text>
+<circle cx="645" cy="170" r="4" fill="#c33c37"/>
+<path d="M645,170 L645,280" fill="none" stroke="#c33c37" stroke-width="3"/>
+<text x="645" y="305" font-size="19" fill="#c33c37" text-anchor="middle" font-weight="600">VBAT_SW</text>
+<text x="365" y="248" font-size="17" fill="#5d7081" text-anchor="start" font-weight="400">F1 按线材、峰值电流和时间特性选型</text>
+<circle cx="700" cy="170" r="4" fill="#c33c37"/>
+<path d="M700,170 L742,146" fill="none" stroke="#c33c37" stroke-width="3"/>
+<circle cx="755" cy="170" r="4" fill="#c33c37"/>
+<path d="M755,170 L850,170" fill="none" stroke="#c33c37" stroke-width="4"/>
+<text x="701" y="211" font-size="18" fill="#5d7081" text-anchor="start" font-weight="400">S1 电机电源</text>
+<text x="850" y="146" font-size="19" fill="#c33c37" text-anchor="middle" font-weight="600">VM_MOTOR</text>
+<path d="M850,170 L850,1285" fill="none" stroke="#c33c37" stroke-width="4"/>
+<path d="M330,225 L780,225" fill="none" stroke="#5e6872" stroke-width="4"/>
+<path d="M780,225 L780,1285" fill="none" stroke="#5e6872" stroke-width="4"/>
+<circle cx="780" cy="225" r="4" fill="#5e6872"/>
+<text x="790" y="250" font-size="18" fill="#5e6872" text-anchor="start" font-weight="400">GND_STAR</text>
+<rect x="1010" y="140" width="350" height="170" rx="8" fill="#f1f8f3" stroke="#9ec5ae" stroke-width="2"/>
+<text x="1032" y="178" font-size="23" fill="#213547" text-anchor="start" font-weight="600">U6 辅助 3.3 V 稳压模块</text>
+<text x="1032" y="212" font-size="18" fill="#5d7081" text-anchor="start" font-weight="400">输入支持 3S；输出建议 ≥0.5 A</text>
+<text x="1032" y="244" font-size="18" fill="#5d7081" text-anchor="start" font-weight="400">供编码器、AS5600 和可选 IMU</text>
+<text x="1032" y="278" font-size="18" fill="#a46418" text-anchor="start" font-weight="400">不与主板 3.3V 输出并联</text>
+<path d="M920,190 L1010,190" fill="none" stroke="#c33c37" stroke-width="3"/>
+<text x="1000" y="132" font-size="17" fill="#c33c37" text-anchor="end" font-weight="600">VBAT_SW</text>
+<path d="M1360,190 L1450,190" fill="none" stroke="#298456" stroke-width="3"/>
+<text x="1465" y="197" font-size="19" fill="#298456" text-anchor="start" font-weight="600">3V3_SENS</text>
+<path d="M960,262 L960,274" fill="none" stroke="#5e6872" stroke-width="2"/>
+<path d="M951.0,274 L969.0,274" fill="none" stroke="#5e6872" stroke-width="2"/>
+<path d="M954.0,280 L966.0,280" fill="none" stroke="#5e6872" stroke-width="2"/>
+<path d="M957.0,286 L963.0,286" fill="none" stroke="#5e6872" stroke-width="2"/>
+<text x="975" y="283" font-size="17" fill="#5e6872" text-anchor="start" font-weight="400">GND</text>
+<path d="M960,262 L1010,262" fill="none" stroke="#5e6872" stroke-width="2"/>
+<rect x="1480" y="230" width="445" height="95" rx="8" fill="#fff" stroke="#c4ced5" stroke-width="2"/>
+<text x="1500" y="264" font-size="20" fill="#213547" text-anchor="start" font-weight="600">C1：电机母线储能电容</text>
+<text x="1500" y="295" font-size="17" fill="#5d7081" text-anchor="start" font-weight="400">示例 470µF / 35V，跨接 VM_MOTOR 与 GND</text>
+<text x="65" y="330" font-size="19" fill="#5d7081" text-anchor="start" font-weight="400">实线连接或同名网络相连；跨线拱桥表示不连接。线色表示功能，不代表实物线色。</text>
+<rect x="65" y="390" width="595" height="900" rx="8" fill="#f5f8fc" stroke="#6f92af" stroke-width="2"/>
+<text x="92" y="431" font-size="27" fill="#213547" text-anchor="start" font-weight="600">U1  ATK-DMG474</text>
+<text x="92" y="466" font-size="20" fill="#a46418" text-anchor="start" font-weight="400">需核对：原始 3.3V GPIO / 定时器 / I²C</text>
+<circle cx="250" cy="390" r="4" fill="white" stroke="#c33c37" stroke-width="2"/>
+<path d="M250,370 L250,390" fill="none" stroke="#c33c37" stroke-width="3"/>
+<text x="250" y="365" font-size="18" fill="#c33c37" text-anchor="middle" font-weight="600">DC输入正端 ← VBAT_SW</text>
+<circle cx="520" cy="390" r="4" fill="white" stroke="#5e6872" stroke-width="2"/>
+<path d="M520,370 L520,390" fill="none" stroke="#5e6872" stroke-width="3"/>
+<text x="520" y="365" font-size="18" fill="#5e6872" text-anchor="middle" font-weight="600">DC输入负端 → GND</text>
+<text x="95" y="511" font-size="22" fill="#213547" text-anchor="start" font-weight="600">1  左前 FL</text>
+<text x="95" y="551" font-size="19" fill="#8552a1" text-anchor="start" font-weight="600">ENC_FL_A</text>
+<text x="250" y="551" font-size="17" fill="#5d7081" text-anchor="start" font-weight="400">→ 计数输入 A</text>
+<text x="95" y="581" font-size="19" fill="#8552a1" text-anchor="start" font-weight="600">ENC_FL_B</text>
+<text x="250" y="581" font-size="17" fill="#5d7081" text-anchor="start" font-weight="400">→ 计数输入 B</text>
+<text x="647" y="509" font-size="19" fill="#2469a0" text-anchor="end" font-weight="400">FL_PWM（待映射）</text>
+<text x="647" y="539" font-size="19" fill="#2469a0" text-anchor="end" font-weight="400">FL_DIR（待映射）</text>
+<circle cx="660" cy="515" r="4" fill="white" stroke="#2469a0" stroke-width="2"/>
+<circle cx="660" cy="545" r="4" fill="white" stroke="#2469a0" stroke-width="2"/>
+<path d="M660,515 H773 Q780,502 787,515 H843 Q850,502 857,515 H1010" fill="none" stroke="#2469a0" stroke-width="3"/>
+<path d="M660,545 H773 Q780,532 787,545 H843 Q850,532 857,545 H1010" fill="none" stroke="#2469a0" stroke-width="3"/>
+<rect x="1010" y="400" width="340" height="190" rx="8" fill="#fff" stroke="#879baa" stroke-width="2"/>
+<text x="1030" y="428" font-size="23" fill="#213547" text-anchor="start" font-weight="600">U2  DRV8871 · 左前</text>
+<circle cx="850" cy="448" r="4" fill="#c33c37"/>
+<path d="M850,448 L1010,448" fill="none" stroke="#c33c37" stroke-width="3"/>
+<circle cx="1010" cy="448" r="4" fill="white" stroke="#c33c37" stroke-width="2"/>
+<text x="1030" y="455" font-size="19" fill="#c33c37" text-anchor="start" font-weight="400">POWER +</text>
+<circle cx="780" cy="478" r="4" fill="#5e6872"/>
+<path d="M780,478 H843 Q850,465 857,478 H1010" fill="none" stroke="#5e6872" stroke-width="3"/>
+<circle cx="1010" cy="478" r="4" fill="white" stroke="#5e6872" stroke-width="2"/>
+<text x="1030" y="485" font-size="19" fill="#5e6872" text-anchor="start" font-weight="400">POWER − / GND</text>
+<circle cx="1010" cy="515" r="4" fill="white" stroke="#2469a0" stroke-width="2"/>
+<text x="1030" y="522" font-size="20" fill="#2469a0" text-anchor="start" font-weight="400">IN1</text>
+<circle cx="1010" cy="545" r="4" fill="white" stroke="#2469a0" stroke-width="2"/>
+<text x="1030" y="552" font-size="20" fill="#2469a0" text-anchor="start" font-weight="400">IN2</text>
+<text x="1330" y="522" font-size="18" fill="#213547" text-anchor="end" font-weight="400">MOTOR 1</text>
+<circle cx="1350" cy="515" r="4" fill="white" stroke="#213547" stroke-width="2"/>
+<path d="M1350,515 L1520,515" fill="none" stroke="#213547" stroke-width="3"/>
+<text x="1330" y="552" font-size="18" fill="#213547" text-anchor="end" font-weight="400">MOTOR 2</text>
+<circle cx="1350" cy="545" r="4" fill="white" stroke="#213547" stroke-width="2"/>
+<path d="M1350,545 L1520,545" fill="none" stroke="#213547" stroke-width="3"/>
+<text x="1030" y="577" font-size="17" fill="#a46418" text-anchor="start" font-weight="400">排针 VCC 留空；不要接 3.3V</text>
+<rect x="1520" y="400" width="410" height="190" rx="8" fill="#fbfcfd" stroke="#9eacb8" stroke-width="2"/>
+<text x="1540" y="429" font-size="23" fill="#213547" text-anchor="start" font-weight="600">M1  左前电机 + AB 编码器</text>
+<text x="1540" y="460" font-size="18" fill="#298456" text-anchor="start" font-weight="400">E+ → 3V3_SENS；E− → GND</text>
+<text x="1540" y="488" font-size="18" fill="#8552a1" text-anchor="start" font-weight="400">A → ENC_FL_A；B → ENC_FL_B</text>
+<circle cx="1520" cy="515" r="4" fill="white" stroke="#213547" stroke-width="2"/>
+<text x="1540" y="522" font-size="19" fill="#213547" text-anchor="start" font-weight="400">电机线 A（按实物标识）</text>
+<circle cx="1520" cy="545" r="4" fill="white" stroke="#213547" stroke-width="2"/>
+<text x="1540" y="552" font-size="19" fill="#213547" text-anchor="start" font-weight="400">电机线 B（按实物标识）</text>
+<text x="1540" y="577" font-size="16" fill="#5d7081" text-anchor="start" font-weight="400">六根线：2 根电机线 + 4 根编码器线</text>
+<path d="M85,695 L640,695" fill="none" stroke="#d7e1e8" stroke-width="1"/>
+<text x="95" y="731" font-size="22" fill="#213547" text-anchor="start" font-weight="600">2  右前 FR</text>
+<text x="95" y="771" font-size="19" fill="#8552a1" text-anchor="start" font-weight="600">ENC_FR_A</text>
+<text x="250" y="771" font-size="17" fill="#5d7081" text-anchor="start" font-weight="400">→ 计数输入 A</text>
+<text x="95" y="801" font-size="19" fill="#8552a1" text-anchor="start" font-weight="600">ENC_FR_B</text>
+<text x="250" y="801" font-size="17" fill="#5d7081" text-anchor="start" font-weight="400">→ 计数输入 B</text>
+<text x="647" y="729" font-size="19" fill="#2469a0" text-anchor="end" font-weight="400">FR_PWM（待映射）</text>
+<text x="647" y="759" font-size="19" fill="#2469a0" text-anchor="end" font-weight="400">FR_DIR（待映射）</text>
+<circle cx="660" cy="735" r="4" fill="white" stroke="#2469a0" stroke-width="2"/>
+<circle cx="660" cy="765" r="4" fill="white" stroke="#2469a0" stroke-width="2"/>
+<path d="M660,735 H773 Q780,722 787,735 H843 Q850,722 857,735 H1010" fill="none" stroke="#2469a0" stroke-width="3"/>
+<path d="M660,765 H773 Q780,752 787,765 H843 Q850,752 857,765 H1010" fill="none" stroke="#2469a0" stroke-width="3"/>
+<rect x="1010" y="620" width="340" height="190" rx="8" fill="#fff" stroke="#879baa" stroke-width="2"/>
+<text x="1030" y="648" font-size="23" fill="#213547" text-anchor="start" font-weight="600">U3  DRV8871 · 右前</text>
+<circle cx="850" cy="668" r="4" fill="#c33c37"/>
+<path d="M850,668 L1010,668" fill="none" stroke="#c33c37" stroke-width="3"/>
+<circle cx="1010" cy="668" r="4" fill="white" stroke="#c33c37" stroke-width="2"/>
+<text x="1030" y="675" font-size="19" fill="#c33c37" text-anchor="start" font-weight="400">POWER +</text>
+<circle cx="780" cy="698" r="4" fill="#5e6872"/>
+<path d="M780,698 H843 Q850,685 857,698 H1010" fill="none" stroke="#5e6872" stroke-width="3"/>
+<circle cx="1010" cy="698" r="4" fill="white" stroke="#5e6872" stroke-width="2"/>
+<text x="1030" y="705" font-size="19" fill="#5e6872" text-anchor="start" font-weight="400">POWER − / GND</text>
+<circle cx="1010" cy="735" r="4" fill="white" stroke="#2469a0" stroke-width="2"/>
+<text x="1030" y="742" font-size="20" fill="#2469a0" text-anchor="start" font-weight="400">IN1</text>
+<circle cx="1010" cy="765" r="4" fill="white" stroke="#2469a0" stroke-width="2"/>
+<text x="1030" y="772" font-size="20" fill="#2469a0" text-anchor="start" font-weight="400">IN2</text>
+<text x="1330" y="742" font-size="18" fill="#213547" text-anchor="end" font-weight="400">MOTOR 1</text>
+<circle cx="1350" cy="735" r="4" fill="white" stroke="#213547" stroke-width="2"/>
+<path d="M1350,735 L1520,735" fill="none" stroke="#213547" stroke-width="3"/>
+<text x="1330" y="772" font-size="18" fill="#213547" text-anchor="end" font-weight="400">MOTOR 2</text>
+<circle cx="1350" cy="765" r="4" fill="white" stroke="#213547" stroke-width="2"/>
+<path d="M1350,765 L1520,765" fill="none" stroke="#213547" stroke-width="3"/>
+<text x="1030" y="797" font-size="17" fill="#a46418" text-anchor="start" font-weight="400">排针 VCC 留空；不要接 3.3V</text>
+<rect x="1520" y="620" width="410" height="190" rx="8" fill="#fbfcfd" stroke="#9eacb8" stroke-width="2"/>
+<text x="1540" y="649" font-size="23" fill="#213547" text-anchor="start" font-weight="600">M2  右前电机 + AB 编码器</text>
+<text x="1540" y="680" font-size="18" fill="#298456" text-anchor="start" font-weight="400">E+ → 3V3_SENS；E− → GND</text>
+<text x="1540" y="708" font-size="18" fill="#8552a1" text-anchor="start" font-weight="400">A → ENC_FR_A；B → ENC_FR_B</text>
+<circle cx="1520" cy="735" r="4" fill="white" stroke="#213547" stroke-width="2"/>
+<text x="1540" y="742" font-size="19" fill="#213547" text-anchor="start" font-weight="400">电机线 A（按实物标识）</text>
+<circle cx="1520" cy="765" r="4" fill="white" stroke="#213547" stroke-width="2"/>
+<text x="1540" y="772" font-size="19" fill="#213547" text-anchor="start" font-weight="400">电机线 B（按实物标识）</text>
+<text x="1540" y="797" font-size="16" fill="#5d7081" text-anchor="start" font-weight="400">六根线：2 根电机线 + 4 根编码器线</text>
+<path d="M85,915 L640,915" fill="none" stroke="#d7e1e8" stroke-width="1"/>
+<text x="95" y="951" font-size="22" fill="#213547" text-anchor="start" font-weight="600">3  左后 RL</text>
+<text x="95" y="991" font-size="19" fill="#8552a1" text-anchor="start" font-weight="600">ENC_RL_A</text>
+<text x="250" y="991" font-size="17" fill="#5d7081" text-anchor="start" font-weight="400">→ 计数输入 A</text>
+<text x="95" y="1021" font-size="19" fill="#8552a1" text-anchor="start" font-weight="600">ENC_RL_B</text>
+<text x="250" y="1021" font-size="17" fill="#5d7081" text-anchor="start" font-weight="400">→ 计数输入 B</text>
+<text x="647" y="949" font-size="19" fill="#2469a0" text-anchor="end" font-weight="400">RL_PWM（待映射）</text>
+<text x="647" y="979" font-size="19" fill="#2469a0" text-anchor="end" font-weight="400">RL_DIR（待映射）</text>
+<circle cx="660" cy="955" r="4" fill="white" stroke="#2469a0" stroke-width="2"/>
+<circle cx="660" cy="985" r="4" fill="white" stroke="#2469a0" stroke-width="2"/>
+<path d="M660,955 H773 Q780,942 787,955 H843 Q850,942 857,955 H1010" fill="none" stroke="#2469a0" stroke-width="3"/>
+<path d="M660,985 H773 Q780,972 787,985 H843 Q850,972 857,985 H1010" fill="none" stroke="#2469a0" stroke-width="3"/>
+<rect x="1010" y="840" width="340" height="190" rx="8" fill="#fff" stroke="#879baa" stroke-width="2"/>
+<text x="1030" y="868" font-size="23" fill="#213547" text-anchor="start" font-weight="600">U4  DRV8871 · 左后</text>
+<circle cx="850" cy="888" r="4" fill="#c33c37"/>
+<path d="M850,888 L1010,888" fill="none" stroke="#c33c37" stroke-width="3"/>
+<circle cx="1010" cy="888" r="4" fill="white" stroke="#c33c37" stroke-width="2"/>
+<text x="1030" y="895" font-size="19" fill="#c33c37" text-anchor="start" font-weight="400">POWER +</text>
+<circle cx="780" cy="918" r="4" fill="#5e6872"/>
+<path d="M780,918 H843 Q850,905 857,918 H1010" fill="none" stroke="#5e6872" stroke-width="3"/>
+<circle cx="1010" cy="918" r="4" fill="white" stroke="#5e6872" stroke-width="2"/>
+<text x="1030" y="925" font-size="19" fill="#5e6872" text-anchor="start" font-weight="400">POWER − / GND</text>
+<circle cx="1010" cy="955" r="4" fill="white" stroke="#2469a0" stroke-width="2"/>
+<text x="1030" y="962" font-size="20" fill="#2469a0" text-anchor="start" font-weight="400">IN1</text>
+<circle cx="1010" cy="985" r="4" fill="white" stroke="#2469a0" stroke-width="2"/>
+<text x="1030" y="992" font-size="20" fill="#2469a0" text-anchor="start" font-weight="400">IN2</text>
+<text x="1330" y="962" font-size="18" fill="#213547" text-anchor="end" font-weight="400">MOTOR 1</text>
+<circle cx="1350" cy="955" r="4" fill="white" stroke="#213547" stroke-width="2"/>
+<path d="M1350,955 L1520,955" fill="none" stroke="#213547" stroke-width="3"/>
+<text x="1330" y="992" font-size="18" fill="#213547" text-anchor="end" font-weight="400">MOTOR 2</text>
+<circle cx="1350" cy="985" r="4" fill="white" stroke="#213547" stroke-width="2"/>
+<path d="M1350,985 L1520,985" fill="none" stroke="#213547" stroke-width="3"/>
+<text x="1030" y="1017" font-size="17" fill="#a46418" text-anchor="start" font-weight="400">排针 VCC 留空；不要接 3.3V</text>
+<rect x="1520" y="840" width="410" height="190" rx="8" fill="#fbfcfd" stroke="#9eacb8" stroke-width="2"/>
+<text x="1540" y="869" font-size="23" fill="#213547" text-anchor="start" font-weight="600">M3  左后电机 + AB 编码器</text>
+<text x="1540" y="900" font-size="18" fill="#298456" text-anchor="start" font-weight="400">E+ → 3V3_SENS；E− → GND</text>
+<text x="1540" y="928" font-size="18" fill="#8552a1" text-anchor="start" font-weight="400">A → ENC_RL_A；B → ENC_RL_B</text>
+<circle cx="1520" cy="955" r="4" fill="white" stroke="#213547" stroke-width="2"/>
+<text x="1540" y="962" font-size="19" fill="#213547" text-anchor="start" font-weight="400">电机线 A（按实物标识）</text>
+<circle cx="1520" cy="985" r="4" fill="white" stroke="#213547" stroke-width="2"/>
+<text x="1540" y="992" font-size="19" fill="#213547" text-anchor="start" font-weight="400">电机线 B（按实物标识）</text>
+<text x="1540" y="1017" font-size="16" fill="#5d7081" text-anchor="start" font-weight="400">六根线：2 根电机线 + 4 根编码器线</text>
+<path d="M85,1135 L640,1135" fill="none" stroke="#d7e1e8" stroke-width="1"/>
+<text x="95" y="1171" font-size="22" fill="#213547" text-anchor="start" font-weight="600">4  右后 RR</text>
+<text x="95" y="1211" font-size="19" fill="#8552a1" text-anchor="start" font-weight="600">ENC_RR_A</text>
+<text x="250" y="1211" font-size="17" fill="#5d7081" text-anchor="start" font-weight="400">→ 计数输入 A</text>
+<text x="95" y="1241" font-size="19" fill="#8552a1" text-anchor="start" font-weight="600">ENC_RR_B</text>
+<text x="250" y="1241" font-size="17" fill="#5d7081" text-anchor="start" font-weight="400">→ 计数输入 B</text>
+<text x="647" y="1169" font-size="19" fill="#2469a0" text-anchor="end" font-weight="400">RR_PWM（待映射）</text>
+<text x="647" y="1199" font-size="19" fill="#2469a0" text-anchor="end" font-weight="400">RR_DIR（待映射）</text>
+<circle cx="660" cy="1175" r="4" fill="white" stroke="#2469a0" stroke-width="2"/>
+<circle cx="660" cy="1205" r="4" fill="white" stroke="#2469a0" stroke-width="2"/>
+<path d="M660,1175 H773 Q780,1162 787,1175 H843 Q850,1162 857,1175 H1010" fill="none" stroke="#2469a0" stroke-width="3"/>
+<path d="M660,1205 H773 Q780,1192 787,1205 H843 Q850,1192 857,1205 H1010" fill="none" stroke="#2469a0" stroke-width="3"/>
+<rect x="1010" y="1060" width="340" height="190" rx="8" fill="#fff" stroke="#879baa" stroke-width="2"/>
+<text x="1030" y="1088" font-size="23" fill="#213547" text-anchor="start" font-weight="600">U5  DRV8871 · 右后</text>
+<circle cx="850" cy="1108" r="4" fill="#c33c37"/>
+<path d="M850,1108 L1010,1108" fill="none" stroke="#c33c37" stroke-width="3"/>
+<circle cx="1010" cy="1108" r="4" fill="white" stroke="#c33c37" stroke-width="2"/>
+<text x="1030" y="1115" font-size="19" fill="#c33c37" text-anchor="start" font-weight="400">POWER +</text>
+<circle cx="780" cy="1138" r="4" fill="#5e6872"/>
+<path d="M780,1138 H843 Q850,1125 857,1138 H1010" fill="none" stroke="#5e6872" stroke-width="3"/>
+<circle cx="1010" cy="1138" r="4" fill="white" stroke="#5e6872" stroke-width="2"/>
+<text x="1030" y="1145" font-size="19" fill="#5e6872" text-anchor="start" font-weight="400">POWER − / GND</text>
+<circle cx="1010" cy="1175" r="4" fill="white" stroke="#2469a0" stroke-width="2"/>
+<text x="1030" y="1182" font-size="20" fill="#2469a0" text-anchor="start" font-weight="400">IN1</text>
+<circle cx="1010" cy="1205" r="4" fill="white" stroke="#2469a0" stroke-width="2"/>
+<text x="1030" y="1212" font-size="20" fill="#2469a0" text-anchor="start" font-weight="400">IN2</text>
+<text x="1330" y="1182" font-size="18" fill="#213547" text-anchor="end" font-weight="400">MOTOR 1</text>
+<circle cx="1350" cy="1175" r="4" fill="white" stroke="#213547" stroke-width="2"/>
+<path d="M1350,1175 L1520,1175" fill="none" stroke="#213547" stroke-width="3"/>
+<text x="1330" y="1212" font-size="18" fill="#213547" text-anchor="end" font-weight="400">MOTOR 2</text>
+<circle cx="1350" cy="1205" r="4" fill="white" stroke="#213547" stroke-width="2"/>
+<path d="M1350,1205 L1520,1205" fill="none" stroke="#213547" stroke-width="3"/>
+<text x="1030" y="1237" font-size="17" fill="#a46418" text-anchor="start" font-weight="400">排针 VCC 留空；不要接 3.3V</text>
+<rect x="1520" y="1060" width="410" height="190" rx="8" fill="#fbfcfd" stroke="#9eacb8" stroke-width="2"/>
+<text x="1540" y="1089" font-size="23" fill="#213547" text-anchor="start" font-weight="600">M4  右后电机 + AB 编码器</text>
+<text x="1540" y="1120" font-size="18" fill="#298456" text-anchor="start" font-weight="400">E+ → 3V3_SENS；E− → GND</text>
+<text x="1540" y="1148" font-size="18" fill="#8552a1" text-anchor="start" font-weight="400">A → ENC_RR_A；B → ENC_RR_B</text>
+<circle cx="1520" cy="1175" r="4" fill="white" stroke="#213547" stroke-width="2"/>
+<text x="1540" y="1182" font-size="19" fill="#213547" text-anchor="start" font-weight="400">电机线 A（按实物标识）</text>
+<circle cx="1520" cy="1205" r="4" fill="white" stroke="#213547" stroke-width="2"/>
+<text x="1540" y="1212" font-size="19" fill="#213547" text-anchor="start" font-weight="400">电机线 B（按实物标识）</text>
+<text x="1540" y="1237" font-size="16" fill="#5d7081" text-anchor="start" font-weight="400">六根线：2 根电机线 + 4 根编码器线</text>
+<path d="M780,1285 L780,1297" fill="none" stroke="#5e6872" stroke-width="2"/>
+<path d="M771.0,1297 L789.0,1297" fill="none" stroke="#5e6872" stroke-width="2"/>
+<path d="M774.0,1303 L786.0,1303" fill="none" stroke="#5e6872" stroke-width="2"/>
+<path d="M777.0,1309 L783.0,1309" fill="none" stroke="#5e6872" stroke-width="2"/>
+<text x="795" y="1306" font-size="17" fill="#5e6872" text-anchor="start" font-weight="400">公共地，电机负线独立回到分电点</text>
+<text x="91" y="1270" font-size="18" fill="#a46418" text-anchor="start" font-weight="400">专用编码器口只有两组；另外两组需核对可用资源。</text>
+<rect x="65" y="1340" width="595" height="205" rx="8" fill="#fffaf1" stroke="#cfad79" stroke-width="2"/>
+<text x="90" y="1379" font-size="23" fill="#213547" text-anchor="start" font-weight="600">主控端尚待确认的内容</text>
+<text x="90" y="1417" font-size="19" fill="#a46418" text-anchor="start" font-weight="400">4 路 PWM + 4 路方向 GPIO 的实际脚号</text>
+<text x="90" y="1450" font-size="19" fill="#a46418" text-anchor="start" font-weight="400">4 组 AB 输入的定时器/中断引脚与接口电平</text>
+<text x="90" y="1483" font-size="19" fill="#a46418" text-anchor="start" font-weight="400">I²C_SDA、I²C_SCL 的实际排针位置</text>
+<text x="90" y="1516" font-size="19" fill="#a46418" text-anchor="start" font-weight="400">不能把隔离/开漏端子直接等同于 3.3V GPIO</text>
+<rect x="1010" y="1340" width="445" height="205" rx="8" fill="#f4f8fc" stroke="#97b5cc" stroke-width="2"/>
+<text x="1035" y="1379" font-size="24" fill="#213547" text-anchor="start" font-weight="600">AS5600 摆角模块</text>
+<text x="1035" y="1415" font-size="20" fill="#298456" text-anchor="start" font-weight="400">VCC → 3V3_SENS *</text>
+<text x="1035" y="1444" font-size="20" fill="#5e6872" text-anchor="start" font-weight="400">GND → GND</text>
+<text x="1035" y="1473" font-size="20" fill="#2469a0" text-anchor="start" font-weight="400">SDA → I2C_SDA</text>
+<text x="1035" y="1502" font-size="20" fill="#2469a0" text-anchor="start" font-weight="400">SCL → I2C_SCL</text>
+<rect x="1520" y="1340" width="410" height="205" rx="8" fill="#fff" stroke="#97b5cc" stroke-width="2" stroke-dasharray="8 6"/>
+<text x="1540" y="1379" font-size="24" fill="#213547" text-anchor="start" font-weight="600">可选 IMU（预留）</text>
+<text x="1540" y="1420" font-size="20" fill="#213547" text-anchor="start" font-weight="400">选择 3.3V I²C 模块</text>
+<text x="1540" y="1454" font-size="20" fill="#2469a0" text-anchor="start" font-weight="400">并接 I2C_SDA / I2C_SCL</text>
+<text x="1540" y="1488" font-size="20" fill="#298456" text-anchor="start" font-weight="400">电源接 3V3_SENS / GND</text>
+<text x="1010" y="1584" font-size="19" fill="#a46418" text-anchor="start" font-weight="400">* AS5600 模块须确认 3.3V 接法；GH1.25 插座针序不能按这张图的位置猜。</text>
+<text x="65" y="1610" font-size="20" fill="#a46418" text-anchor="start" font-weight="400">本图确认模块之间的网络关系；主板原理图和模块针序核对前，不按照片端子位置直接接线。</text>
+</svg>

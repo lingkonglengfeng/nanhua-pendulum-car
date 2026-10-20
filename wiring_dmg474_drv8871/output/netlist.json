@@ -1,0 +1,180 @@
+{
+  "status": "functional_wiring_only_MCU_pins_unassigned",
+  "board_from_photo": "ATK-DMG474",
+  "nets": {
+    "BAT_POS": [
+      "B1.+",
+      "F1.1"
+    ],
+    "FUSED_POS": [
+      "F1.2",
+      "S0.1"
+    ],
+    "VBAT_SW": [
+      "S0.2",
+      "S1.1",
+      "U1.DC_IN_POS",
+      "U6.VIN_POS"
+    ],
+    "VM_MOTOR": [
+      "S1.2",
+      "C1.POS",
+      "DRV1.POWER_POS",
+      "DRV2.POWER_POS",
+      "DRV3.POWER_POS",
+      "DRV4.POWER_POS"
+    ],
+    "GND": [
+      "B1.-",
+      "U1.DC_IN_NEG",
+      "U6.VIN_NEG",
+      "U6.VOUT_NEG",
+      "C1.NEG",
+      "AS5600.GND",
+      "IMU_OPTIONAL.GND",
+      "DRV1.POWER_NEG",
+      "DRV1.GND_HEADER",
+      "M1.ENC_GND",
+      "DRV2.POWER_NEG",
+      "DRV2.GND_HEADER",
+      "M2.ENC_GND",
+      "DRV3.POWER_NEG",
+      "DRV3.GND_HEADER",
+      "M3.ENC_GND",
+      "DRV4.POWER_NEG",
+      "DRV4.GND_HEADER",
+      "M4.ENC_GND"
+    ],
+    "3V3_SENS": [
+      "U6.VOUT_3V3",
+      "AS5600.VCC_CONDITIONAL",
+      "IMU_OPTIONAL.VCC_3V3",
+      "RP_SDA.1",
+      "RP_SCL.1",
+      "M1.ENC_VCC",
+      "M2.ENC_VCC",
+      "M3.ENC_VCC",
+      "M4.ENC_VCC"
+    ],
+    "I2C_SDA": [
+      "U1.TBD_SDA",
+      "AS5600.SDA",
+      "IMU_OPTIONAL.SDA",
+      "RP_SDA.2"
+    ],
+    "I2C_SCL": [
+      "U1.TBD_SCL",
+      "AS5600.SCL",
+      "IMU_OPTIONAL.SCL",
+      "RP_SCL.2"
+    ],
+    "FL_PWM": [
+      "U1.TBD_PWM_FL",
+      "DRV1.IN1"
+    ],
+    "FL_DIR": [
+      "U1.TBD_DIR_FL",
+      "DRV1.IN2"
+    ],
+    "ENC_FL_A": [
+      "M1.ENC_A",
+      "U1.TBD_ENC_FL_A"
+    ],
+    "ENC_FL_B": [
+      "M1.ENC_B",
+      "U1.TBD_ENC_FL_B"
+    ],
+    "FL_MOTOR_1": [
+      "DRV1.MOTOR1",
+      "M1.MOTOR_A"
+    ],
+    "FL_MOTOR_2": [
+      "DRV1.MOTOR2",
+      "M1.MOTOR_B"
+    ],
+    "FR_PWM": [
+      "U1.TBD_PWM_FR",
+      "DRV2.IN1"
+    ],
+    "FR_DIR": [
+      "U1.TBD_DIR_FR",
+      "DRV2.IN2"
+    ],
+    "ENC_FR_A": [
+      "M2.ENC_A",
+      "U1.TBD_ENC_FR_A"
+    ],
+    "ENC_FR_B": [
+      "M2.ENC_B",
+      "U1.TBD_ENC_FR_B"
+    ],
+    "FR_MOTOR_1": [
+      "DRV2.MOTOR1",
+      "M2.MOTOR_A"
+    ],
+    "FR_MOTOR_2": [
+      "DRV2.MOTOR2",
+      "M2.MOTOR_B"
+    ],
+    "RL_PWM": [
+      "U1.TBD_PWM_RL",
+      "DRV3.IN1"
+    ],
+    "RL_DIR": [
+      "U1.TBD_DIR_RL",
+      "DRV3.IN2"
+    ],
+    "ENC_RL_A": [
+      "M3.ENC_A",
+      "U1.TBD_ENC_RL_A"
+    ],
+    "ENC_RL_B": [
+      "M3.ENC_B",
+      "U1.TBD_ENC_RL_B"
+    ],
+    "RL_MOTOR_1": [
+      "DRV3.MOTOR1",
+      "M3.MOTOR_A"
+    ],
+    "RL_MOTOR_2": [
+      "DRV3.MOTOR2",
+      "M3.MOTOR_B"
+    ],
+    "RR_PWM": [
+      "U1.TBD_PWM_RR",
+      "DRV4.IN1"
+    ],
+    "RR_DIR": [
+      "U1.TBD_DIR_RR",
+      "DRV4.IN2"
+    ],
+    "ENC_RR_A": [
+      "M4.ENC_A",
+      "U1.TBD_ENC_RR_A"
+    ],
+    "ENC_RR_B": [
+      "M4.ENC_B",
+      "U1.TBD_ENC_RR_B"
+    ],
+    "RR_MOTOR_1": [
+      "DRV4.MOTOR1",
+      "M4.MOTOR_A"
+    ],
+    "RR_MOTOR_2": [
+      "DRV4.MOTOR2",
+      "M4.MOTOR_B"
+    ]
+  },
+  "no_connect": [
+    "DRV1.VCC_HEADER",
+    "DRV2.VCC_HEADER",
+    "DRV3.VCC_HEADER",
+    "DRV4.VCC_HEADER"
+  ],
+  "conditions": [
+    "U1 raw 3.3V GPIO and encoder input availability must be verified",
+    "AS5600 module must support 3.3V configuration",
+    "Encoder A/B electrical levels and pull-ups need module check",
+    "C1 value and fusing illustrative, not validated power-transient design"
+  ]
+}

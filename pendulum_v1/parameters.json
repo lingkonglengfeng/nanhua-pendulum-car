@@ -1,0 +1,23 @@
+{
+  "revision": "A1mini-V1",
+  "pivot_height_above_deck": 320.0,
+  "tower_center_spacing": 130.0,
+  "tower_thickness": 12.0,
+  "tower_split_height": 175.0,
+  "bearing_seat_diameter": 22.2,
+  "bearing_seat_depth": 7.2,
+  "shaft_bore_diameter": 8.2,
+  "tube_bore_diameter": 8.3,
+  "rod_pivot_to_tip": 280.0,
+  "tube_insertion_bottom_above_pivot": 20.0,
+  "pcb_width": 30.0,
+  "pcb_height": 30.0,
+  "pcb_hole_pitch_x": 24.0,
+  "pcb_hole_pitch_z": 24.0,
+  "pcb_mount_hole_diameter": 2.8,
+  "magnet_diameter": 6.0,
+  "magnet_thickness": 3.0,
+  "magnet_seat_diameter": 6.2,
+  "nominal_magnet_to_package_gap": 1.5,
+  "notes": "PCB dimensions are provisional, not an assertion about any commercial AS5048A module. All dimensions mm. Change bearing/shaft fits after coupon printing."
+}

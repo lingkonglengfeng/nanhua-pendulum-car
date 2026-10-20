@@ -1,0 +1,10 @@
+{
+  "single_file_no_external_scripts": true,
+  "embedded_png_verified": true,
+  "inline_scripts_parse": true,
+  "no_graphics_context_fallback": true,
+  "missing_library_fallback": true,
+  "interaction_logic_with_renderer_stub": true,
+  "weight_position_slider_checked": true,
+  "actual_browser_or_GPU_tested": false
+}

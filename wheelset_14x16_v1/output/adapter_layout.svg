@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="880" viewBox="0 0 1200 880"><rect width="1200" height="880" fill="#f5f7fa"/><g font-family="Microsoft YaHei,sans-serif" fill="#173447">
+<text x="55" y="65" font-size="30" font-weight="600">新轮组专用转接片 · 14×16 mm</text>
+<text x="55" y="108" font-size="19">72×60×3 mm / 四轮需 4 片 / 接入现有主底板的 M4 可调接口</text>
+<rect x="158" y="210" width="504" height="420" rx="21" fill="#e7eedc" stroke="#173447" stroke-width="2"/>
+<circle cx="214" cy="546" r="15.75" fill="white" stroke="#2469a0" stroke-width="2"/>
+<circle cx="214" cy="294" r="15.75" fill="white" stroke="#2469a0" stroke-width="2"/>
+<circle cx="606" cy="546" r="15.75" fill="white" stroke="#2469a0" stroke-width="2"/>
+<circle cx="606" cy="294" r="15.75" fill="white" stroke="#2469a0" stroke-width="2"/>
+<rect x="342.1" y="245" width="23.8" height="210" rx="11.9" fill="white" stroke="#b87a35" stroke-width="2"/>
+<circle cx="354" cy="399" r="10.5" fill="none" stroke="#c44444" stroke-width="2"/>
+<circle cx="354" cy="301" r="10.5" fill="none" stroke="#c44444" stroke-width="2"/>
+<rect x="454.1" y="245" width="23.8" height="210" rx="11.9" fill="white" stroke="#b87a35" stroke-width="2"/>
+<circle cx="466" cy="399" r="10.5" fill="none" stroke="#c44444" stroke-width="2"/>
+<circle cx="466" cy="301" r="10.5" fill="none" stroke="#c44444" stroke-width="2"/>
+<text x="730" y="235" font-size="19">蓝色：4×Ø4.5，孔距 56×36</text>
+<text x="730" y="287" font-size="19">橙色：2×30×3.4 长槽</text>
+<text x="730" y="339" font-size="19">红圈：轮组四个 M3 螺丝位置</text>
+<text x="730" y="391" font-size="19">两槽横向中心距 16</text>
+<text x="730" y="443" font-size="19">同槽前后螺丝间距 14</text>
+<text x="730" y="495" font-size="19">沿电机轴向可移动约 ±6 mm</text>
+<text x="55" y="725" font-size="20">适配已知孔距；轮轴高度、电机型号和电气参数仍待确认。</text>
+<text x="55" y="768" font-size="19">先调整轮胎与板边间隙再锁紧。推荐 FR4/铝板加工；STL 可用于试装。</text>
+<text x="55" y="815" font-size="18">加工用 DXF 的毫米尺寸。图中不把原 520 的 30×24 孔当作新轮组固定孔。</text>
+</g></svg>

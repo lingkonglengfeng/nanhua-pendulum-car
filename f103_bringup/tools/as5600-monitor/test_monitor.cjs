@@ -1,0 +1,71 @@
+const fs=require('fs'),vm=require('vm'),assert=require('node:assert/strict');
+const html=fs.readFileSync(__dirname+'/as5600-monitor.html','utf8');
+const core=html.match(/<script id="protocol-core">([\s\S]*?)<\/script>/)[1];
+const context={};vm.createContext(context);vm.runInContext(core,context);const P=context.SerialTelemetry;
+const seed=JSON.parse(html.match(/<script id="seed-data" type="application\/json">([\s\S]*?)<\/script>/)[1]);
+const parsed=P.parseText(fs.readFileSync(__dirname+'/samples/legacy_q.log','utf8')),q=parsed.filter(p=>p.kind==='Q');
+assert.equal(q.length,77);assert.equal(q.filter(p=>p.valid).length,18);assert.equal(Math.min(...q.map(p=>p.raw)),662);assert.equal(Math.max(...q.map(p=>p.raw)),1809);
+assert.equal(parsed.filter(p=>p.kind==='C').at(-1).fw,'0x103C8014');assert.equal(parsed.filter(p=>p.kind==='S').at(-1).errors,0);
+assert.equal(P.parseLine('Q,100,1024,90.000,39,1,1,0,0').valid,true);
+assert.equal(P.parseLine('Q,100,1024,90.000,39,0,1,0,0').valid,false);
+for(const bad of ['Q,100,4096,90.000,39,1,1,0,0','Q,100,1,nan,39,1,1,0,0','Q,100,1,90,55,1,1,1,0','Q,100,1,90,39,1,0,0,0','Q,100,1,90,39,1,1,0','Q,100,1,90,39,1,1,0,0garbage'])assert.equal(P.parseLine(bad),null);
+const received=[],framer=new P.Framer(p=>received.push(p));
+const stream=q.map(p=>`Q,${p.ms},${p.raw},${p.deg},${p.status},${+p.valid},${+p.md},${+p.ml},${+p.mh}\r\n`).join('');
+for(let i=0;i<stream.length;i++)framer.feed(stream[i]);assert.equal(received.length,77);assert.equal(framer.bad,0);
+framer.feed('Q,'+'x'.repeat(9000)+'\nQ,15000,1024,90.000,39,1,1,0,0\n');assert.equal(received.length,78);assert.equal(framer.bad,1);
+const model=new P.Samples(3);function point(ms,deg,valid=true){return {ms,deg,raw:0,status:39,valid,md:true,ml:false,mh:false};}
+model.add(point(10000,359));model.add(point(10100,1));assert.equal(model.rows.at(-1).unwrapped,361);
+model.add(point(10,15,false));assert.equal(model.rows.at(-1).gap,true);assert.equal(model.rows.at(-1).boot,1);assert.ok(model.rows.at(-1).t>10100);
+model.add(point(110,20));assert.equal(model.rows.length,3);assert.equal(model.validCount,2);
+const wrap=new P.Samples();wrap.add(point(0xfffffff0,359));wrap.add(point(50,1));assert.equal(wrap.rows.at(-1).unwrapped,361);assert.equal(wrap.rows.at(-1).boot,0);assert.equal(wrap.rows.at(-1).elapsed,.066);
+assert.ok(!html.includes('__EMBEDDED_LOG_JSON__'));assert.ok(!/<script[^>]+src=/.test(html));
+assert.ok(!html.includes('__PROTOCOL_CORE__'));assert.ok(!html.includes('__MONITOR_APP__'));
+const actual=P.parseText(seed.text),counts={};for(const p of actual)counts[p.kind]=(counts[p.kind]||0)+1;
+assert.equal(counts.U,859);assert.equal(counts.T,49);assert.equal(counts.B,37);assert.equal(counts.X,3);
+assert.equal(actual.filter(p=>p.kind==='X').at(-1).reasonText,'ANGLE');
+assert.equal(actual.filter(p=>p.kind==='schema').at(-1).fw,'0x103C8039');
+const t='T,2000,1024,-1.250,0.350,-0.120,12.50,0.400,18.00,4,0,10.00,11.00,13.00,16.00,12.00';
+const u='U,1000,2,359.000,-2.500,0.500,1.020,-0.200,0.100,-4.00,0.350,2.00,1200,15000,66.00,0.650,2.00,2.00';
+const b='B,2000,4,0,1,1,2,200,0,2048,178.750,-1.250,0.350,-0.120,0.000,8.400000,0.000000,0.170000,0.800,8.00,30.00,400,0,-1,1';
+assert.equal(P.parseLine(t).deg,90);assert.equal(P.parseLine(t).errorDeg,-1.25);
+assert.equal(P.parseLine(t.split(',').slice(0,11).join(',')).state,4);
+assert.equal(P.parseLine(u).captureDeg,2);assert.equal(P.parseLine(u).bottomDeg,359);
+assert.equal(P.parseLine(u.split(',').slice(0,-1).join(',')).captureDeg,null);
+assert.equal(P.parseLine(b).valid,true);assert.equal(P.parseLine(b).uprightRaw,2048);
+const firmware=fs.readFileSync(__dirname+'/../../Core/Src/app_telemetry.c','utf8');
+for(const [kind,line] of [['T',t],['U',u],['B',b]]){
+ const header=firmware.match(new RegExp('#'+kind+',([^"\\\\]+)'))[1];
+ assert.equal(line.split(',').length,header.split(',').length+1,'current '+kind+' header field count');
+}
+for(const bad of [t+',99',t.replace(',1024,',',4096,'),t.replace(',-1.250,',',nan,'),u.replace(',359.000,',',360.000,'),u+',99','X,1,ANGLE,2,10,20,0,200,-30,100,0garbage'])assert.equal(P.parseLine(bad),null);
+assert.equal(P.parseText('Q,100,1,90,39,1,1,0,0garbage').length,0);
+assert.equal(P.parseText('[12:00:00 001]收：T,2000,10\r\n[12:00:00 002]收：24,-1.250,0.350,-0.120,12.50,0.400,18.00,4,0,10.00,11.00,13.00,16.00,12.00\r\n')[0].raw,1024);
+const live=[],currentFramer=new P.Framer(p=>live.push(p));
+const streamNow=['#F103_SWING_TRACE_V2,baud=115200,period_ms=40,fw=0x103C8041',u,b,t,'P,2000,0,0,0,0,0,5,0','Y,2000,0,0,0,0,0.008,0.12,0.01,0','X,2020,STOP,1,18,200,0,200,-1,1220,0','A,1,OK,GET'].join('\r\n')+'\r\n';
+for(let i=0;i<streamNow.length;i+=7)currentFramer.feed(streamNow.slice(i,i+7));
+assert.equal(currentFramer.bad,0);assert.equal(live.length,8);assert.equal(live[0].fw,'0x103C8041');
+const merged=new P.Samples();merged.add(P.parseLine(u));assert.equal(merged.rows[0].deg,null);assert.equal(merged.rows[0].valid,null);assert.equal(merged.knownCount,0);
+assert.equal(P.series(merged.rows).mode,'bottom');assert.equal(P.series(merged.rows).rows[0].value,359);
+merged.add(P.parseLine(b));merged.add(P.parseLine(t));assert.equal(merged.rows.length,2);assert.equal(merged.rows.at(-1).deg,90);assert.equal(merged.rows.at(-1).bottomDeg,178.75);assert.equal(merged.knownCount,1);assert.equal(merged.validCount,1);
+assert.equal(P.series(merged.rows).mode,'error');assert.equal(P.series(merged.rows,'mechanical').rows.length,1);
+assert.equal(P.series(merged.rows,'error').rows.at(-1).value,-1.25);
+const onlyT=new P.Samples();onlyT.add(P.parseLine(t));assert.equal(onlyT.knownCount,0);assert.equal(onlyT.rows[0].status,null);assert.equal(onlyT.rows[0].valid,null);
+// A stopped-mode AS5600 query must show the new mechanical reading, rather
+// than retaining a previous run's upright-error selection in automatic mode.
+const queried=new P.Samples();queried.add(P.parseLine(t));queried.add(P.parseLine('Q,3000,2048,180.000,39,1,1,0,0'));
+assert.equal(P.series(queried.rows).mode,'mechanical');assert.equal(P.series(queried.rows).rows.at(-1).value,180);
+assert.equal(P.parseLine('A,100,OK,AS5600').ok,true);
+const queryModel=new P.Samples();const queryPackets=P.parseText('A,100,OK,AS5600\r\nC,3000,0x103C8042,'+Array(25).fill('0').join(',')+'\r\nS,3000,'+Array(20).fill('0').join(',')+'\r\nQ,3000,2048,180.000,39,0,1,0,0\r\n');
+assert.equal(queryPackets.length,4);assert.equal(queryPackets[1].fw,'0x103C8042');queryModel.add(queryPackets.at(-1));assert.equal(queryModel.rows.at(-1).valid,false);
+const csv=P.csv(merged.rows);assert.ok(csv.includes('upright_error_deg,bottom_deg'));assert.ok(csv.split('\r\n')[1].startsWith('0,1000,0,,,,,,,,,,'));
+const replay=new P.Samples();for(const p of actual)if(['Q','T','B','U'].includes(p.kind))replay.add(p);
+assert.ok(replay.rows.length>850);assert.ok(P.series(replay.rows,'mechanical').rows.length>40);assert.ok(P.series(replay.rows,'bottom').rows.length>800);
+// Loading/starting the monitor never switches BALTRACE or arms/drives the vehicle.
+const app=html.match(/<script id="monitor-app">([\s\S]*?)<\/script>/)[1];
+assert.ok(app.includes("()=>send('LOG 1\\nGET')"));assert.ok(!app.includes("send('BALTRACE"));
+assert.ok(app.includes("send('AS5600')"));assert.ok(html.includes('id="query-as5600" disabled>读取 AS5600'));
+console.log('PASS: actual imported capture=77 Q samples, 18 valid; chunks, CRLF, malformed/contradictory rows, overflow recovery.');
+console.log('PASS: reserved status bits, communication-invalid frames, cross-circle angle, MCU reset, uint32 wrap, bounded history.');
+console.log('PASS: standalone HTML contains real capture, complete inline scripts, no external assets.');
+console.log('PASS: actual capture=859 U, 49 T, 37 B, 3 X; current U18/T16/B25 schema, old U17/T11, trace firmware headers and side packets.');
+console.log('PASS: merged same-timestamp Q/T/B/U, unknown magnetic status, angle references, CSV blanks, chunked live current protocol.');

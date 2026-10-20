@@ -1,0 +1,103 @@
+{
+  "units": "mm",
+  "parts": [
+    {
+      "id": "11_weight_clamp_head",
+      "name": "配重夹环螺丝侧",
+      "qty": 2,
+      "size_xyz": [
+        26.0,
+        6.7,
+        8.0
+      ],
+      "solid_volume_cm3": 1.114,
+      "valid": true,
+      "watertight": true
+    },
+    {
+      "id": "12_weight_clamp_nut",
+      "name": "配重夹环螺母侧",
+      "qty": 2,
+      "size_xyz": [
+        26.0,
+        6.7,
+        8.0
+      ],
+      "solid_volume_cm3": 1.0312,
+      "valid": true,
+      "watertight": true
+    }
+  ],
+  "checks": {
+    "default_part_overlaps_mm3": [],
+    "tube_nominal_radial_clearance_mm": 0.09999999999999964,
+    "position_and_count_envelopes": [
+      {
+        "position": 70.0,
+        "washers": 0,
+        "conservative_sweep_radius": 86.977,
+        "bottom_clearance_to_deck": 233.023,
+        "y_envelope": [
+          -10.000000000000002,
+          10.0
+        ]
+      },
+      {
+        "position": 70.0,
+        "washers": 2,
+        "conservative_sweep_radius": 90.142,
+        "bottom_clearance_to_deck": 229.858,
+        "y_envelope": [
+          -10.000000000000002,
+          10.0
+        ]
+      },
+      {
+        "position": 70.0,
+        "washers": 10,
+        "conservative_sweep_radius": 102.825,
+        "bottom_clearance_to_deck": 217.175,
+        "y_envelope": [
+          -10.000000000000002,
+          10.0
+        ]
+      },
+      {
+        "position": 230.0,
+        "washers": 0,
+        "conservative_sweep_radius": 246.343,
+        "bottom_clearance_to_deck": 73.657,
+        "y_envelope": [
+          -10.000000000000002,
+          10.0
+        ]
+      },
+      {
+        "position": 230.0,
+        "washers": 2,
+        "conservative_sweep_radius": 249.539,
+        "bottom_clearance_to_deck": 70.461,
+        "y_envelope": [
+          -10.000000000000002,
+          10.0
+        ]
+      },
+      {
+        "position": 230.0,
+        "washers": 10,
+        "conservative_sweep_radius": 262.322,
+        "bottom_clearance_to_deck": 57.678,
+        "y_envelope": [
+          -10.000000000000002,
+          10.0
+        ]
+      }
+    ],
+    "nominal_full_accessory_height_mm": 19.2,
+    "washer_mass_theoretical_g": 1.829,
+    "printed_pair_solid_volume_cm3": 4.29,
+    "v3_models_not_modified": true,
+    "no_physical_grip_strength_or_dynamic_test": true,
+    "step_readback_solids": 19
+  }
+}

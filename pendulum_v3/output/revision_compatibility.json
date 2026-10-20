@@ -1,0 +1,22 @@
+{
+  "reference_drawing": "reference/AS5600_module_drawing.jpg",
+  "unchanged_stl_byte_identical_to_v2": [
+    "01_base_shoe.stl",
+    "02_lower_arm.stl",
+    "03_upper_arm.stl",
+    "04_splice_plate.stl",
+    "05_bearing_cover.stl",
+    "06_rod_hub.stl",
+    "07_encoder_rail.stl",
+    "09_magnet_cup.stl",
+    "10_fit_coupon.stl"
+  ],
+  "changed_printed_part": "08_encoder_carrier",
+  "mount_pitch_mm": [
+    17,
+    17
+  ],
+  "slider_fastener_y_mm": 112.89999999999999,
+  "within_original_rail": true,
+  "needs_physical_trial": true
+}

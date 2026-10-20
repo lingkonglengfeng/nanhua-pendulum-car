@@ -1,0 +1,196 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2400" height="1500" viewBox="0 0 2400 1500">
+<title>四驱倒立摆 V2 原理图关系图 · DMG474 + 四路 DRV8871</title>
+<defs>
+<marker id="arrow-signal" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#2168a5"/></marker>
+<marker id="arrow-power" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#c3443b"/></marker>
+<marker id="arrow-low" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#277d58"/></marker>
+<filter id="shadow" x="-10%" y="-10%" width="120%" height="130%"><feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#193044" flood-opacity="0.12"/></filter>
+</defs>
+<style>text{font-family:"Microsoft YaHei","Noto Sans CJK SC",sans-serif} path,line,polyline{stroke-linecap:round;stroke-linejoin:round}</style>
+<rect width="2400" height="1500" fill="#ffffff"/>
+<text x="55" y="58" font-size="34" fill="#203040" text-anchor="start" font-weight="650">四驱倒立摆 · 原理图关系图 V2（座子脚号已勘误）</text>
+<text x="55" y="94" font-size="18" fill="#5d6d7b" text-anchor="start" font-weight="400">DMG474 主板 → 低压信号转接板 → 四路 DRV8871 / 编码器；按已核对 CSV 展示确切 GPIO、CN 针号与定时器。</text>
+<text x="2345" y="58" font-size="17" fill="#5d6d7b" text-anchor="end" font-weight="400">03 / V2</text>
+<text x="510" y="120" font-size="15" fill="#2168a5" text-anchor="end" font-weight="650">主板接口</text>
+<text x="1008" y="120" font-size="15" fill="#277d58" text-anchor="end" font-weight="650">低压分组信号</text>
+<rect x="55" y="150" width="450" height="930" rx="16" fill="#f5f8fb" stroke="#6f92ae" stroke-width="2" filter="url(#shadow)"/>
+<text x="80" y="192" font-size="25" fill="#203040" text-anchor="start" font-weight="650">主板 U1 · ATK-DMG474</text>
+<text x="80" y="222" font-size="16" fill="#5d6d7b" text-anchor="start" font-weight="400">原始低压接口（CN针号按原理图）</text>
+<rect x="80" y="238" width="110" height="30" rx="14" fill="#ffffff" stroke="#2168a5" stroke-width="2"/>
+<text x="135.0" y="260" font-size="15" fill="#2168a5" text-anchor="middle" font-weight="650">CN8 · PM1</text>
+<text x="80" y="309" font-size="15" fill="#203040" text-anchor="start" font-weight="400">FL  PA8 / PB13     PWM / DIR     17 / 18</text>
+<text x="80" y="334" font-size="15" fill="#7a4ba0" text-anchor="start" font-weight="400">FL  PA6 / PA7      ENC A / B      1 / 3</text>
+<text x="80" y="359" font-size="15" fill="#203040" text-anchor="start" font-weight="400">FR  PA9 / PB14     PWM / DIR     19 / 20</text>
+<text x="80" y="384" font-size="15" fill="#203040" text-anchor="start" font-weight="400">RL  PA10 / PB15    PWM / DIR     21 / 22</text>
+<text x="80" y="409" font-size="15" fill="#7a4ba0" text-anchor="start" font-weight="400">RL  PA0 / PA1      ENC A / B      2 / 4</text>
+<rect x="80" y="434" width="125" height="30" rx="14" fill="#ffffff" stroke="#2168a5" stroke-width="2"/>
+<text x="142.5" y="456" font-size="15" fill="#2168a5" text-anchor="middle" font-weight="650">CN10 · PM2</text>
+<text x="80" y="505" font-size="15" fill="#7a4ba0" text-anchor="start" font-weight="400">FR  PD12 / PD13    ENC A / B      1 / 3</text>
+<text x="80" y="530" font-size="15" fill="#203040" text-anchor="start" font-weight="400">RR  PC8 / PC10     PWM / DIR     21 / 18</text>
+<text x="80" y="555" font-size="15" fill="#7a4ba0" text-anchor="start" font-weight="400">RR  PD3 / PD4      ENC A / B      2 / 4</text>
+<text x="80" y="590" font-size="15" fill="#2168a5" text-anchor="start" font-weight="400">I²C4  PC6 / PC7     SCL / SDA    17 / 19</text>
+<rect x="80" y="618" width="145" height="30" rx="14" fill="#ffffff" stroke="#277d58" stroke-width="2"/>
+<text x="152.5" y="640" font-size="15" fill="#277d58" text-anchor="middle" font-weight="650">CN2 · 低压电源</text>
+<text x="80" y="688" font-size="16" fill="#277d58" text-anchor="start" font-weight="400">CN2-1 = 3.3V     传感器供电</text>
+<text x="80" y="715" font-size="16" fill="#5a6570" text-anchor="start" font-weight="400">CN2-2 = GND      公共参考</text>
+<rect x="75" y="760" width="410" height="190" rx="10" fill="#ffffff" stroke="#9db5c4" stroke-width="2"/>
+<text x="93" y="795" font-size="18" fill="#203040" text-anchor="start" font-weight="650">接入边界</text>
+<text x="93" y="830" font-size="15" fill="#5d6d7b" text-anchor="start" font-weight="400">CN8 / CN10 → J_MCU1 / J_MCU2</text>
+<text x="93" y="859" font-size="15" fill="#5d6d7b" text-anchor="start" font-weight="400">接口触点 1:1；未使用触点不短接</text>
+<text x="93" y="888" font-size="15" fill="#5d6d7b" text-anchor="start" font-weight="400">信号电平按 3.3V GPIO 处理</text>
+<text x="93" y="917" font-size="15" fill="#5d6d7b" text-anchor="start" font-weight="400">I²C4 可并接 AS5600 / 预留 IMU</text>
+<text x="80" y="1002" font-size="16" fill="#a16117" text-anchor="start" font-weight="400">CN2 传感器供电兼容性待确认</text>
+<text x="80" y="1032" font-size="14" fill="#a16117" text-anchor="start" font-weight="400">（按外部负载预算核算，暂不视为已验证）</text>
+<rect x="555" y="150" width="450" height="930" rx="16" fill="#f4faf7" stroke="#70a68e" stroke-width="2" filter="url(#shadow)"/>
+<text x="580" y="192" font-size="25" fill="#203040" text-anchor="start" font-weight="650">低压信号转接板</text>
+<rect x="579" y="218" width="402" height="72" rx="8" fill="#ffffff" stroke="#b8c9d3" stroke-width="2"/>
+<text x="593" y="244" font-size="16" fill="#2168a5" text-anchor="start" font-weight="650">J_DRV_FL  → PWM / DIR / GND</text>
+<text x="593" y="273" font-size="15" fill="#7a4ba0" text-anchor="start" font-weight="400">J_ENC_FL  ← A / B；供电 3V3 / GND</text>
+<rect x="579" y="443" width="402" height="72" rx="8" fill="#ffffff" stroke="#b8c9d3" stroke-width="2"/>
+<text x="593" y="469" font-size="16" fill="#2168a5" text-anchor="start" font-weight="650">J_DRV_FR  → PWM / DIR / GND</text>
+<text x="593" y="498" font-size="15" fill="#7a4ba0" text-anchor="start" font-weight="400">J_ENC_FR  ← A / B；供电 3V3 / GND</text>
+<rect x="579" y="668" width="402" height="72" rx="8" fill="#ffffff" stroke="#b8c9d3" stroke-width="2"/>
+<text x="593" y="694" font-size="16" fill="#2168a5" text-anchor="start" font-weight="650">J_DRV_RL  → PWM / DIR / GND</text>
+<text x="593" y="723" font-size="15" fill="#7a4ba0" text-anchor="start" font-weight="400">J_ENC_RL  ← A / B；供电 3V3 / GND</text>
+<rect x="579" y="893" width="402" height="72" rx="8" fill="#ffffff" stroke="#b8c9d3" stroke-width="2"/>
+<text x="593" y="919" font-size="16" fill="#2168a5" text-anchor="start" font-weight="650">J_DRV_RR  → PWM / DIR / GND</text>
+<text x="593" y="948" font-size="15" fill="#7a4ba0" text-anchor="start" font-weight="400">J_ENC_RR  ← A / B；供电 3V3 / GND</text>
+<text x="585" y="345" font-size="17" fill="#2168a5" text-anchor="start" font-weight="400">CN8 → J_MCU1：2×12，1:1</text>
+<text x="585" y="378" font-size="17" fill="#2168a5" text-anchor="start" font-weight="400">CN10 → J_MCU2：2×12，1:1</text>
+<text x="585" y="410" font-size="16" fill="#a16117" text-anchor="start" font-weight="400">防呆接口；电机电流不经过此板</text>
+<text x="585" y="560" font-size="18" fill="#277d58" text-anchor="start" font-weight="400">CN2-1 → 3V3_SENS</text>
+<text x="585" y="594" font-size="18" fill="#5a6570" text-anchor="start" font-weight="400">CN2-2 → GND 公共参考</text>
+<text x="585" y="628" font-size="17" fill="#277d58" text-anchor="start" font-weight="400">供编码器 / AS5600 / 预留 IMU</text>
+<text x="585" y="790" font-size="18" fill="#2168a5" text-anchor="start" font-weight="400">I²C4 → AS5600 + 预留 IMU</text>
+<text x="585" y="824" font-size="17" fill="#2168a5" text-anchor="start" font-weight="400">SCL：PC6 / CN10-17</text>
+<text x="585" y="856" font-size="17" fill="#2168a5" text-anchor="start" font-weight="400">SDA：PC7 / CN10-19</text>
+<text x="585" y="1010" font-size="15" fill="#a16117" text-anchor="start" font-weight="400">传感器供电兼容性、插头针序待确认</text>
+<text x="585" y="1040" font-size="15" fill="#a16117" text-anchor="start" font-weight="400">I²C 上拉至 3.3V；地址与已有上拉先核对</text>
+<line x1="505" y1="360" x2="551" y2="360" stroke="#2168a5" stroke-width="3" marker-end="url(#arrow-signal)"/>
+<line x1="551" y1="390" x2="505" y2="390" stroke="#277d58" stroke-width="2" marker-end="url(#arrow-low)"/>
+<line x1="505" y1="590" x2="551" y2="590" stroke="#277d58" stroke-width="3" marker-end="url(#arrow-low)"/>
+<line x1="1005" y1="235" x2="1048" y2="235" stroke="#2168a5" stroke-width="2" marker-end="url(#arrow-signal)"/>
+<line x1="1048" y1="273" x2="1005" y2="273" stroke="#277d58" stroke-width="2" marker-end="url(#arrow-low)"/>
+<rect x="1050" y="150" width="1290" height="205" rx="15" fill="#e9f2fb" stroke="#9fb3c1" stroke-width="2" filter="url(#shadow)"/>
+<text x="1074" y="184" font-size="23" fill="#203040" text-anchor="start" font-weight="650">1  左前（FL）</text>
+<text x="1410" y="184" font-size="16" fill="#5d6d7b" text-anchor="start" font-weight="400">J_DRV_FL + J_ENC_FL → DRV8871 + 编码器</text>
+<text x="2316" y="184" font-size="15" fill="#a16117" text-anchor="end" font-weight="650">DRV VCC 排针：悬空</text>
+<line x1="1072" y1="201" x2="2318" y2="201" stroke="#bfd0dc" stroke-width="1"/>
+<text x="1076" y="232" font-size="17" fill="#2168a5" text-anchor="start" font-weight="650">DRV8871 低压控制</text>
+<text x="1076" y="262" font-size="16" fill="#2168a5" text-anchor="start" font-weight="400">IN1 / PWM   PA8 · TIM1_CH1 · CN8-17</text>
+<text x="1076" y="290" font-size="16" fill="#2168a5" text-anchor="start" font-weight="400">IN2 / DIR   PB13 · GPIO · CN8-18</text>
+<text x="1076" y="322" font-size="14" fill="#5d6d7b" text-anchor="start" font-weight="400">→ J_DRV：IN1 / IN2 / GND（只走低压信号）</text>
+<text x="1735" y="232" font-size="17" fill="#7a4ba0" text-anchor="start" font-weight="650">编码器反馈 → MCU · TIM3 编码器模式</text>
+<text x="1735" y="262" font-size="16" fill="#7a4ba0" text-anchor="start" font-weight="400">A           PA6 · TIM3_CH1 · CN8-1</text>
+<text x="1735" y="290" font-size="16" fill="#7a4ba0" text-anchor="start" font-weight="400">B           PA7 · TIM3_CH2 · CN8-3</text>
+<text x="1735" y="322" font-size="14" fill="#5d6d7b" text-anchor="start" font-weight="400">→ J_ENC：3V3 / GND / A / B；供电电平待确认</text>
+<text x="1074" y="345" font-size="14" fill="#c3443b" text-anchor="start" font-weight="650">POWER +/− ← 独立分电；OUT1 / OUT2 → M1 电机绕组（粗线，不经信号板）</text>
+<line x1="1005" y1="460" x2="1048" y2="460" stroke="#2168a5" stroke-width="2" marker-end="url(#arrow-signal)"/>
+<line x1="1048" y1="498" x2="1005" y2="498" stroke="#277d58" stroke-width="2" marker-end="url(#arrow-low)"/>
+<rect x="1050" y="375" width="1290" height="205" rx="15" fill="#eef8f2" stroke="#9fb3c1" stroke-width="2" filter="url(#shadow)"/>
+<text x="1074" y="409" font-size="23" fill="#203040" text-anchor="start" font-weight="650">2  右前（FR）</text>
+<text x="1410" y="409" font-size="16" fill="#5d6d7b" text-anchor="start" font-weight="400">J_DRV_FR + J_ENC_FR → DRV8871 + 编码器</text>
+<text x="2316" y="409" font-size="15" fill="#a16117" text-anchor="end" font-weight="650">DRV VCC 排针：悬空</text>
+<line x1="1072" y1="426" x2="2318" y2="426" stroke="#bfd0dc" stroke-width="1"/>
+<text x="1076" y="457" font-size="17" fill="#2168a5" text-anchor="start" font-weight="650">DRV8871 低压控制</text>
+<text x="1076" y="487" font-size="16" fill="#2168a5" text-anchor="start" font-weight="400">IN1 / PWM   PA9 · TIM1_CH2 · CN8-19</text>
+<text x="1076" y="515" font-size="16" fill="#2168a5" text-anchor="start" font-weight="400">IN2 / DIR   PB14 · GPIO · CN8-20</text>
+<text x="1076" y="547" font-size="14" fill="#5d6d7b" text-anchor="start" font-weight="400">→ J_DRV：IN1 / IN2 / GND（只走低压信号）</text>
+<text x="1735" y="457" font-size="17" fill="#7a4ba0" text-anchor="start" font-weight="650">编码器反馈 → MCU · TIM4 编码器模式</text>
+<text x="1735" y="487" font-size="16" fill="#7a4ba0" text-anchor="start" font-weight="400">A           PD12 · TIM4_CH1 · CN10-1</text>
+<text x="1735" y="515" font-size="16" fill="#7a4ba0" text-anchor="start" font-weight="400">B           PD13 · TIM4_CH2 · CN10-3</text>
+<text x="1735" y="547" font-size="14" fill="#5d6d7b" text-anchor="start" font-weight="400">→ J_ENC：3V3 / GND / A / B；供电电平待确认</text>
+<text x="1074" y="570" font-size="14" fill="#c3443b" text-anchor="start" font-weight="650">POWER +/− ← 独立分电；OUT1 / OUT2 → M2 电机绕组（粗线，不经信号板）</text>
+<line x1="1005" y1="685" x2="1048" y2="685" stroke="#2168a5" stroke-width="2" marker-end="url(#arrow-signal)"/>
+<line x1="1048" y1="723" x2="1005" y2="723" stroke="#277d58" stroke-width="2" marker-end="url(#arrow-low)"/>
+<rect x="1050" y="600" width="1290" height="205" rx="15" fill="#f8f0fb" stroke="#9fb3c1" stroke-width="2" filter="url(#shadow)"/>
+<text x="1074" y="634" font-size="23" fill="#203040" text-anchor="start" font-weight="650">3  左后（RL）</text>
+<text x="1410" y="634" font-size="16" fill="#5d6d7b" text-anchor="start" font-weight="400">J_DRV_RL + J_ENC_RL → DRV8871 + 编码器</text>
+<text x="2316" y="634" font-size="15" fill="#a16117" text-anchor="end" font-weight="650">DRV VCC 排针：悬空</text>
+<line x1="1072" y1="651" x2="2318" y2="651" stroke="#bfd0dc" stroke-width="1"/>
+<text x="1076" y="682" font-size="17" fill="#2168a5" text-anchor="start" font-weight="650">DRV8871 低压控制</text>
+<text x="1076" y="712" font-size="16" fill="#2168a5" text-anchor="start" font-weight="400">IN1 / PWM   PA10 · TIM1_CH3 · CN8-21</text>
+<text x="1076" y="740" font-size="16" fill="#2168a5" text-anchor="start" font-weight="400">IN2 / DIR   PB15 · GPIO · CN8-22</text>
+<text x="1076" y="772" font-size="14" fill="#5d6d7b" text-anchor="start" font-weight="400">→ J_DRV：IN1 / IN2 / GND（只走低压信号）</text>
+<text x="1735" y="682" font-size="17" fill="#7a4ba0" text-anchor="start" font-weight="650">编码器反馈 → MCU · TIM5 编码器模式</text>
+<text x="1735" y="712" font-size="16" fill="#7a4ba0" text-anchor="start" font-weight="400">A           PA0 · TIM5_CH1 · CN8-2</text>
+<text x="1735" y="740" font-size="16" fill="#7a4ba0" text-anchor="start" font-weight="400">B           PA1 · TIM5_CH2 · CN8-4</text>
+<text x="1735" y="772" font-size="14" fill="#5d6d7b" text-anchor="start" font-weight="400">→ J_ENC：3V3 / GND / A / B；供电电平待确认</text>
+<text x="1074" y="795" font-size="14" fill="#c3443b" text-anchor="start" font-weight="650">POWER +/− ← 独立分电；OUT1 / OUT2 → M3 电机绕组（粗线，不经信号板）</text>
+<line x1="1005" y1="910" x2="1048" y2="910" stroke="#2168a5" stroke-width="2" marker-end="url(#arrow-signal)"/>
+<line x1="1048" y1="948" x2="1005" y2="948" stroke="#277d58" stroke-width="2" marker-end="url(#arrow-low)"/>
+<rect x="1050" y="825" width="1290" height="205" rx="15" fill="#fff6e8" stroke="#9fb3c1" stroke-width="2" filter="url(#shadow)"/>
+<text x="1074" y="859" font-size="23" fill="#203040" text-anchor="start" font-weight="650">4  右后（RR）</text>
+<text x="1410" y="859" font-size="16" fill="#5d6d7b" text-anchor="start" font-weight="400">J_DRV_RR + J_ENC_RR → DRV8871 + 编码器</text>
+<text x="2316" y="859" font-size="15" fill="#a16117" text-anchor="end" font-weight="650">DRV VCC 排针：悬空</text>
+<line x1="1072" y1="876" x2="2318" y2="876" stroke="#bfd0dc" stroke-width="1"/>
+<text x="1076" y="907" font-size="17" fill="#2168a5" text-anchor="start" font-weight="650">DRV8871 低压控制</text>
+<text x="1076" y="937" font-size="16" fill="#2168a5" text-anchor="start" font-weight="400">IN1 / PWM   PC8 · TIM8_CH3 · CN10-21</text>
+<text x="1076" y="965" font-size="16" fill="#2168a5" text-anchor="start" font-weight="400">IN2 / DIR   PC10 · GPIO · CN10-18</text>
+<text x="1076" y="997" font-size="14" fill="#5d6d7b" text-anchor="start" font-weight="400">→ J_DRV：IN1 / IN2 / GND（只走低压信号）</text>
+<text x="1735" y="907" font-size="17" fill="#7a4ba0" text-anchor="start" font-weight="650">编码器反馈 → MCU · TIM2 编码器模式</text>
+<text x="1735" y="937" font-size="16" fill="#7a4ba0" text-anchor="start" font-weight="400">A           PD3 · TIM2_CH1 · CN10-2</text>
+<text x="1735" y="965" font-size="16" fill="#7a4ba0" text-anchor="start" font-weight="400">B           PD4 · TIM2_CH2 · CN10-4</text>
+<text x="1735" y="997" font-size="14" fill="#5d6d7b" text-anchor="start" font-weight="400">→ J_ENC：3V3 / GND / A / B；供电电平待确认</text>
+<text x="1074" y="1020" font-size="14" fill="#c3443b" text-anchor="start" font-weight="650">POWER +/− ← 独立分电；OUT1 / OUT2 → M4 电机绕组（粗线，不经信号板）</text>
+<rect x="55" y="1135" width="2285" height="310" rx="16" fill="#fff9f7" stroke="#d59f98" stroke-width="2" filter="url(#shadow)"/>
+<text x="80" y="1171" font-size="23" fill="#c3443b" text-anchor="start" font-weight="650">电源与回流：功率链路独立于低压信号板</text>
+<text x="2315" y="1171" font-size="16" fill="#a16117" text-anchor="end" font-weight="650">电机电流不走 CN8/CN10 或转接板</text>
+<rect x="135" y="1207" width="155" height="66" rx="9" fill="#ffffff" stroke="#d7a29b" stroke-width="2"/>
+<text x="212" y="1234" font-size="16" fill="#c3443b" text-anchor="middle" font-weight="650">B1 电池</text>
+<text x="212" y="1257" font-size="12" fill="#5d6d7b" text-anchor="middle" font-weight="400">11.1V 标称</text>
+<rect x="385" y="1207" width="155" height="66" rx="9" fill="#ffffff" stroke="#d7a29b" stroke-width="2"/>
+<text x="462" y="1234" font-size="16" fill="#c3443b" text-anchor="middle" font-weight="650">F1 保险</text>
+<text x="462" y="1257" font-size="12" fill="#5d6d7b" text-anchor="middle" font-weight="400">按峰值/线材选</text>
+<rect x="560" y="1207" width="155" height="66" rx="9" fill="#ffffff" stroke="#d7a29b" stroke-width="2"/>
+<text x="637" y="1234" font-size="16" fill="#c3443b" text-anchor="middle" font-weight="650">S0 总开关</text>
+<text x="637" y="1257" font-size="12" fill="#5d6d7b" text-anchor="middle" font-weight="400">主板与电机总断</text>
+<rect x="795" y="1207" width="180" height="66" rx="9" fill="#ffffff" stroke="#d7a29b" stroke-width="2"/>
+<text x="885" y="1234" font-size="16" fill="#c3443b" text-anchor="middle" font-weight="650">VBAT_SW 分支</text>
+<text x="885" y="1257" font-size="12" fill="#5d6d7b" text-anchor="middle" font-weight="400">总开关后电源节点</text>
+<rect x="1030" y="1207" width="155" height="66" rx="9" fill="#ffffff" stroke="#d7a29b" stroke-width="2"/>
+<text x="1107" y="1234" font-size="16" fill="#c3443b" text-anchor="middle" font-weight="650">S1 电机开关</text>
+<text x="1107" y="1257" font-size="12" fill="#5d6d7b" text-anchor="middle" font-weight="400">仅断电机侧</text>
+<rect x="1225" y="1207" width="180" height="66" rx="9" fill="#ffffff" stroke="#d7a29b" stroke-width="2"/>
+<text x="1315" y="1234" font-size="16" fill="#c3443b" text-anchor="middle" font-weight="650">独立分电</text>
+<text x="1315" y="1257" font-size="12" fill="#5d6d7b" text-anchor="middle" font-weight="400">粗线 / 独立回流</text>
+<line x1="290" y1="1240" x2="385" y2="1240" stroke="#c3443b" stroke-width="4" marker-end="url(#arrow-power)"/>
+<line x1="540" y1="1240" x2="560" y2="1240" stroke="#c3443b" stroke-width="4" marker-end="url(#arrow-power)"/>
+<line x1="715" y1="1240" x2="795" y2="1240" stroke="#c3443b" stroke-width="4" marker-end="url(#arrow-power)"/>
+<line x1="975" y1="1240" x2="1030" y2="1240" stroke="#c3443b" stroke-width="4" marker-end="url(#arrow-power)"/>
+<line x1="1185" y1="1240" x2="1225" y2="1240" stroke="#c3443b" stroke-width="4" marker-end="url(#arrow-power)"/>
+<line x1="885" y1="1273" x2="885" y2="1309" stroke="#c3443b" stroke-width="3" marker-end="url(#arrow-power)"/>
+<text x="897" y="1305" font-size="14" fill="#c3443b" text-anchor="start" font-weight="400">VBAT_SW → 主板 DC 输入</text>
+<line x1="1315" y1="1273" x2="1478" y2="1305" stroke="#c3443b" stroke-width="2" marker-end="url(#arrow-power)"/>
+<rect x="1430" y="1315" width="160" height="53" rx="8" fill="#ffffff" stroke="#d7a29b" stroke-width="2"/>
+<text x="1510" y="1337" font-size="14" fill="#c3443b" text-anchor="middle" font-weight="650">DRV_FL POWER +</text>
+<text x="1510" y="1357" font-size="12" fill="#5d6d7b" text-anchor="middle" font-weight="400">POWER− 接下方公共地</text>
+<line x1="1315" y1="1273" x2="1688" y2="1305" stroke="#c3443b" stroke-width="2" marker-end="url(#arrow-power)"/>
+<rect x="1640" y="1315" width="160" height="53" rx="8" fill="#ffffff" stroke="#d7a29b" stroke-width="2"/>
+<text x="1720" y="1337" font-size="14" fill="#c3443b" text-anchor="middle" font-weight="650">DRV_FR POWER +</text>
+<text x="1720" y="1357" font-size="12" fill="#5d6d7b" text-anchor="middle" font-weight="400">POWER− 接下方公共地</text>
+<line x1="1315" y1="1273" x2="1898" y2="1305" stroke="#c3443b" stroke-width="2" marker-end="url(#arrow-power)"/>
+<rect x="1850" y="1315" width="160" height="53" rx="8" fill="#ffffff" stroke="#d7a29b" stroke-width="2"/>
+<text x="1930" y="1337" font-size="14" fill="#c3443b" text-anchor="middle" font-weight="650">DRV_RL POWER +</text>
+<text x="1930" y="1357" font-size="12" fill="#5d6d7b" text-anchor="middle" font-weight="400">POWER− 接下方公共地</text>
+<line x1="1315" y1="1273" x2="2108" y2="1305" stroke="#c3443b" stroke-width="2" marker-end="url(#arrow-power)"/>
+<rect x="2060" y="1315" width="160" height="53" rx="8" fill="#ffffff" stroke="#d7a29b" stroke-width="2"/>
+<text x="2140" y="1337" font-size="14" fill="#c3443b" text-anchor="middle" font-weight="650">DRV_RR POWER +</text>
+<text x="2140" y="1357" font-size="12" fill="#5d6d7b" text-anchor="middle" font-weight="400">POWER− 接下方公共地</text>
+<line x1="135" y1="1273" x2="135" y2="1400" stroke="#5a6570" stroke-width="3"/>
+<line x1="1510" y1="1368" x2="1510" y2="1400" stroke="#5a6570" stroke-width="3"/>
+<circle cx="1510" cy="1400" r="3" fill="#5a6570"/>
+<line x1="1720" y1="1368" x2="1720" y2="1400" stroke="#5a6570" stroke-width="3"/>
+<circle cx="1720" cy="1400" r="3" fill="#5a6570"/>
+<line x1="1930" y1="1368" x2="1930" y2="1400" stroke="#5a6570" stroke-width="3"/>
+<circle cx="1930" cy="1400" r="3" fill="#5a6570"/>
+<line x1="2140" y1="1368" x2="2140" y2="1400" stroke="#5a6570" stroke-width="3"/>
+<circle cx="2140" cy="1400" r="3" fill="#5a6570"/>
+<line x1="135" y1="1400" x2="1315" y2="1400" stroke="#5a6570" stroke-width="3"/>
+<circle cx="135" cy="1400" r="5" fill="#5a6570"/>
+<text x="150" y="1395" font-size="14" fill="#5a6570" text-anchor="start" font-weight="400">GND 公共参考：主板 / 信号板 / DRV 逻辑</text>
+<line x1="1315" y1="1400" x2="2230" y2="1400" stroke="#5a6570" stroke-width="5" stroke-dasharray="8 6"/>
+<text x="1495" y="1426" font-size="14" fill="#5a6570" text-anchor="start" font-weight="400">电机 POWER− 粗线独立回分电点（不穿过信号板）</text>
+<text x="55" y="1465" font-size="15" fill="#a16117" text-anchor="start" font-weight="400">核对项：模块插头物理针序待核对（尤其 AS5600 GH1.25）；PC6/PC7 共享辅助电路，断开 P7/CN14 步进供电并核对波形后再启用 I²C4。</text>
+<text x="2345" y="1465" font-size="15" fill="#a16117" text-anchor="end" font-weight="650">关系图 · 非 Gerber · 未完成 ERC/DRC</text>
+</svg>

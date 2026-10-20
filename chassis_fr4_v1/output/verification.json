@@ -1,0 +1,133 @@
+{
+  "revision": "CHASSIS-FR4-V1",
+  "parts": [
+    {
+      "id": "01_chassis_FR4_320x220x4",
+      "quantity": 1,
+      "blank_optional": false,
+      "size": [
+        320,
+        220,
+        4
+      ],
+      "volume_cm3": 272.71,
+      "FR4_mass_g_at_1_9": 518.1,
+      "features": 100
+    },
+    {
+      "id": "02_motor_adapter_adjustable_72x60x3",
+      "quantity": 4,
+      "blank_optional": false,
+      "size": [
+        72,
+        60,
+        3
+      ],
+      "volume_cm3": 11.218,
+      "FR4_mass_g_at_1_9": 21.3,
+      "features": 6
+    },
+    {
+      "id": "03_motor_adapter_blank_72x60x3",
+      "quantity": 0,
+      "blank_optional": true,
+      "size": [
+        72,
+        60,
+        3
+      ],
+      "volume_cm3": 12.746,
+      "FR4_mass_g_at_1_9": 24.2,
+      "features": 4
+    }
+  ],
+  "checks": {
+    "main_feature_count": 100,
+    "base_holes_match_v3": true,
+    "old_base_vs_motor_fastener_clear": true,
+    "fixed_chassis_part_overlap": false,
+    "adapter_tested_M3_patterns_xy": [
+      [
+        24,
+        0
+      ],
+      [
+        24,
+        12
+      ],
+      [
+        24,
+        20
+      ],
+      [
+        24,
+        24
+      ],
+      [
+        24,
+        30
+      ],
+      [
+        27,
+        0
+      ],
+      [
+        27,
+        12
+      ],
+      [
+        27,
+        20
+      ],
+      [
+        27,
+        24
+      ],
+      [
+        27,
+        30
+      ],
+      [
+        30,
+        0
+      ],
+      [
+        30,
+        12
+      ],
+      [
+        30,
+        20
+      ],
+      [
+        30,
+        24
+      ],
+      [
+        30,
+        30
+      ]
+    ],
+    "wheel_to_plate_lateral_reference_clearance_mm": 4,
+    "electronics_top_reference_mm": 28.6,
+    "pendulum_sweep_min_z_mm": 39.971,
+    "electronics_to_sweep_vertical_margin_mm": 11.371,
+    "520_reference_ground_clearance_under_battery_mm": 25.5,
+    "520_battery_ground_clearance_if_axis_offset_pm7_mm": [
+      18.5,
+      32.5
+    ],
+    "battery_gap_below_plate_mm": 6.0,
+    "370_reference_ground_clearance_under_battery_mm": 28.0,
+    "machining_dxf_readback": true,
+    "520_bracket_from_user_drawing": true,
+    "520_actual_output_axis_height_unverified": true,
+    "370_bracket_not_verified": true,
+    "physical_strength_not_tested": true
+  },
+  "limitations": [
+    "No physical machining, load or vibration validation",
+    "520 bracket follows user drawing; 370 bracket and both motor body/shaft dimensions remain unverified",
+    "Controller board and battery placeholders are not a verified product fit"
+  ]
+}

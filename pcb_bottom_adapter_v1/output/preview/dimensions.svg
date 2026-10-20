@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="210mm" height="240mm" viewBox="-90 -110 210 240"><rect x="-90" y="-110" width="210" height="240" fill="white"/><g font-family="Microsoft YaHei" font-size="4" stroke-width="0.35">
+<text x="-75" y="-94" fill="#203b47" font-size="6">底部转接板 V1 · 单位 mm</text>
+<rect x="-40.0" y="-58.0" width="80" height="116" rx="5" fill="#fff2df" stroke="#915323"/>
+<rect x="-22.0" y="-32.0" width="44" height="64" rx="5" fill="white" stroke="#915323"/>
+<rect x="-35" y="-45" width="70" height="90" fill="none" stroke="#25806a" stroke-dasharray="2 1"/>
+<circle cx="-32.0" cy="42.0" r="1.7" fill="white" stroke="#25806a"/>
+<circle cx="-32.0" cy="42.0" r="2.75" fill="none" stroke="#25806a"/><circle cx="-32.0" cy="42.0" r="4.5" fill="none" stroke="#25806a" stroke-dasharray="1 1"/>
+<path d="M-35.0,42.0h6 M-32.0,39.0v6" fill="none" stroke="#25806a" stroke-width="0.15"/>
+<circle cx="-32.0" cy="-42.0" r="1.7" fill="white" stroke="#25806a"/>
+<circle cx="-32.0" cy="-42.0" r="2.75" fill="none" stroke="#25806a"/><circle cx="-32.0" cy="-42.0" r="4.5" fill="none" stroke="#25806a" stroke-dasharray="1 1"/>
+<path d="M-35.0,-42.0h6 M-32.0,-45.0v6" fill="none" stroke="#25806a" stroke-width="0.15"/>
+<circle cx="32.0" cy="42.0" r="1.7" fill="white" stroke="#25806a"/>
+<circle cx="32.0" cy="42.0" r="2.75" fill="none" stroke="#25806a"/><circle cx="32.0" cy="42.0" r="4.5" fill="none" stroke="#25806a" stroke-dasharray="1 1"/>
+<path d="M29.0,42.0h6 M32.0,39.0v6" fill="none" stroke="#25806a" stroke-width="0.15"/>
+<circle cx="32.0" cy="-42.0" r="1.7" fill="white" stroke="#25806a"/>
+<circle cx="32.0" cy="-42.0" r="2.75" fill="none" stroke="#25806a"/><circle cx="32.0" cy="-42.0" r="4.5" fill="none" stroke="#25806a" stroke-dasharray="1 1"/>
+<path d="M29.0,-42.0h6 M32.0,-45.0v6" fill="none" stroke="#25806a" stroke-width="0.15"/>
+<circle cx="-20.0" cy="50.0" r="1.7" fill="white" stroke="#3f6db4"/>
+<path d="M-23.0,50.0h6 M-20.0,47.0v6" fill="none" stroke="#3f6db4" stroke-width="0.15"/>
+<circle cx="-20.0" cy="-50.0" r="1.7" fill="white" stroke="#3f6db4"/>
+<path d="M-23.0,-50.0h6 M-20.0,-53.0v6" fill="none" stroke="#3f6db4" stroke-width="0.15"/>
+<circle cx="20.0" cy="50.0" r="1.7" fill="white" stroke="#3f6db4"/>
+<path d="M17.0,50.0h6 M20.0,47.0v6" fill="none" stroke="#3f6db4" stroke-width="0.15"/>
+<circle cx="20.0" cy="-50.0" r="1.7" fill="white" stroke="#3f6db4"/>
+<path d="M17.0,-50.0h6 M20.0,-53.0v6" fill="none" stroke="#3f6db4" stroke-width="0.15"/>
+<path d="M-40,-72L40,-72" stroke="#657987"/><path d="M-41.5,-73.5l3,3 M38.5,-73.5l3,3" stroke="#657987"/><text x="-3" y="-74" fill="#203b47">80</text>
+<path d="M54,-58L54,58" stroke="#657987"/><path d="M52.5,-59.5l3,3 M52.5,56.5l3,3" stroke="#657987"/><text x="56" y="2" fill="#203b47">116</text>
+<path d="M-32,67L32,67" stroke="#657987"/><path d="M-33.5,65.5l3,3 M30.5,65.5l3,3" stroke="#657987"/><text x="-8" y="72" fill="#203b47">64 PCB</text>
+<path d="M-52,-42L-52,42" stroke="#657987"/><path d="M-53.5,-43.5l3,3 M-53.5,40.5l3,3" stroke="#657987"/><text x="-76" y="2" fill="#203b47">84 PCB</text>
+<path d="M-20,80L20,80" stroke="#657987"/><path d="M-21.5,78.5l3,3 M18.5,78.5l3,3" stroke="#657987"/><text x="-9" y="85" fill="#203b47">40 车架</text>
+<path d="M76,-50L76,50" stroke="#657987"/><path d="M74.5,-51.5l3,3 M74.5,48.5l3,3" stroke="#657987"/><text x="78" y="2" fill="#203b47">100 车架</text>
+<text x="-75" y="98" fill="#25806a">绿：PCB 4×Ø3.4，支柱 Ø5.5 / 根部 Ø9，高 6</text>
+<text x="-75" y="106" fill="#3f6db4">蓝：车架 4×Ø3.4，配 Ø8×10 隔柱</text>
+<text x="-75" y="114" fill="#203b47">板厚 4；外角 R5；中窗 44×64 R5；原点为转接板中心</text>
+</g></svg>

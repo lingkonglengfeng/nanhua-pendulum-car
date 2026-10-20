@@ -1,0 +1,33 @@
+{
+  "part_size_mm": [
+    72,
+    60,
+    3
+  ],
+  "quantity": 4,
+  "wheelset_bolt_pattern_x_y": [
+    16,
+    14
+  ],
+  "wheelset_hole_diameter_from_image": 3.3,
+  "chassis_interface_pattern": [
+    56,
+    36
+  ],
+  "chassis_hole_match": true,
+  "adjustment_centers_tested_mm": [
+    -6,
+    0,
+    6
+  ],
+  "valid_solid": true,
+  "watertight_stl": true,
+  "dxf_readback": true,
+  "not_verified": [
+    "actual motor/encoder type and ratings",
+    "mounting-plane to axle height",
+    "wheel to bracket clearance",
+    "65 versus 66mm diameter labels",
+    "physical stiffness and grip"
+  ]
+}
